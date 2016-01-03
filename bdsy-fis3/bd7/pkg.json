@@ -1,0 +1,54 @@
+{
+    "res": {
+        "css/index.css": {
+            "uri": "/static/css/index_f5b8ccf.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "css/mine.css": {
+            "uri": "/static/css/mine_52d1cb8.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "css/news.css": {
+            "uri": "/static/css/news_8205742.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "css/shopping.css": {
+            "uri": "/static/css/shopping_0c95fde.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "css/video.css": {
+            "uri": "/static/css/video_cd14525.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "js/jquery-1.9.1.min.js": {
+            "uri": "/static/js/jquery-1.9.1.min_310236f.js",
+            "type": "js"
+        },
+        "js/index.js": {
+            "uri": "/static/js/index_4533e31.js",
+            "type": "js"
+        },
+        "index.html": {
+            "uri": "/index.html",
+            "type": "html"
+        }
+    },
+    "pkg": {
+        "p0": {
+            "uri": "/static/css/aio_e8c9285.css",
+            "type": "css",
+            "has": [
+                "css/index.css",
+                "css/mine.css",
+                "css/news.css",
+                "css/shopping.css",
+                "css/video.css"
+            ]
+        }
+    }
+}
