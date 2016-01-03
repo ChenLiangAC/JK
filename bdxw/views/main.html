@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>新闻后台管理系统</title>
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/bootstrap-checkbox.css">
+</head>
+
+<body class="bg1">
+<!-- 首页 -->
+    <div class="home">
+        <div class="homepage">
+        <!-- 顶部用户信息 -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" >
+                           </button>
+                        <a class="navbar-brand" href="#">新闻后台管理系统
+                        
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <i class="fa fa-tasks"></i>
+                                    </a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>
+ 									
+                                </a>
+                            </li>
+                            <!-- 用户信息 -->
+                            <% if (locals.username) { %> 
+                            <li class="dropdown">
+                                <div class="photo"><img src="/images/photo.jpg" alt="这是头像" width="45" height="45" /></div>
+                                <a href="#" class="dropdown-toggle">
+                                <%= username %>
+                                <span class="caret"></span>
+                                </a>
+                               
+                            </li>
+                            <!-- 即时信息 -->
+                            <li class="last"><a href="/logout">退出</a>
+                            </li>
+                            <% } %>   
+                        </ul>
+                    </div>
+                    
+                </div>
+               
+            </nav>
+            <!-- 左侧导航栏 -->
+            <div class="leftlist">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active">
+                        <a href="/main">
+                            <i class="fa fa-tachometer"></i>首页
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/addnews">
+                            <i class="fa fa-pencil"></i>增加新闻内容
+                        </a>
+                    </li>
+
+
+                    <li role="presentation">
+                        <a href="/newslist">
+                            <i class="fa fa-bar-chart-o"></i>查看新闻内容
+                        </a>
+                    </li>
+                     <li role="presentation">
+                        <a href="/userlist">
+                            <i class="fa fa-bar-chart-o"></i>用户管理
+                        </a>
+                    </li>
+                    
+                    
+                    <!-- 图标显示 -->
+                    
+                </ul>
+            </div>
+            <!-- 右侧主要信息表格显示 -->
+            <div class="rightform">
+                
+                <!-- 主要部分数据显示 -->
+                <div class="inforshow">
+                    <div class="datashow infor">
+                        <div class="row">
+                        <!-- 系统显示 -->
+                            <div class="con-datashow">
+                                <strong>欢迎界面</strong>
+                                <div class="controls">
+                                   
+                                </div>
+                                <div class="ibox-content">
+                                    <div id="morris-one-line-chart">
+                                        <center>
+    
+                                            <table width="100%" border="2" bordercolor="#cccccc" cellpadding="5" cellspacing="0" class="infor-sys">
+                                            <% if (locals.username) { %> 
+                                                <tr>
+                                                    <td>欢迎<%= username %></td>
+                                                    
+                                                </tr>
+                                                 <% } %>   
+                                            </table>
+
+                                        </center>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                              
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- 图表js引用 -->
+    
+</body>
+
+</html>

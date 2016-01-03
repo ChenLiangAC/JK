@@ -1,0 +1,126 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= title %></title>
+    <link href="/stylesheets/main.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-checkbox.css">
+</head>
+<!-- 查看用户列表界面显示 -->
+<body class="bg1">
+    <div class="home">
+        <div class="homepage">
+            <!-- 顶部用户信息，搜索 -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed">
+                        </button>
+                        <a class="navbar-brand" href="#">新闻后台管理系统
+                        
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <i class="fa fa-tasks"></i>
+                                </a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>
+                                    
+                                </a>
+                            </li>
+                            <!-- 用户信息 -->
+                             <% if (locals.username) { %> 
+                            <li class="dropdown">
+                                <div class="photo"><img src="/images/photo.jpg" alt="这是头像" width="45" height="45" /></div>
+                                <a href="#" class="dropdown-toggle">
+                                <%= username %>
+                                <span class="caret"></span>
+                                </a>
+                               
+                            </li>
+                            <!-- 即时信息 -->
+                            <li class="last"><a href="/logout">退出</a>
+                            </li>
+                            <% } %>   
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 左侧导航栏 -->
+            <div class="leftlist">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation">
+                        <a href="/main">
+                            <i class="fa fa-tachometer"></i>首页
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/addnews">
+                            <i class="fa fa-pencil"></i>增加新闻内容
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/newslist">
+                            <i class="fa fa-bar-chart-o"></i>查看新闻内容
+                        </a>
+                    </li>
+                    <li role="presentation " class="active">
+                        <a href="/userlist">
+                            <i class="fa fa-bar-chart-o"></i>用户管理
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rightform">
+                <div class="inforshow">
+                    <!-- 用户数据列表 -->
+                    <div class="message infor">
+                        <div class="newmessage">
+                            <strong>用户列表</strong>
+                            <div class="controls">
+                            </div>
+                            <div class="messagetable">
+                                <form>
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>用户</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <% userlist.forEach(function(item){ %>
+                                                <tr>
+                                                    <td>
+                                                        <%=item.userid %>
+                                                    </td>
+                                                    <td>
+                                                        <%=item.username %>
+                                                    </td>
+                                                    <td>
+                                                        <a href='/userdelete/<%=item.userid %>'>删除</a>
+                                                        <a href='/useredit/<%=item.userid %>'>修改</a></td>
+                                                </tr>
+                                                <%});%>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

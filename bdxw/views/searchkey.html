@@ -1,0 +1,176 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= title %></title>
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/bootstrap-checkbox.css">
+</head>
+<!-- 查询搜索新闻内容界面显示 -->
+<body class="bg1">
+    <div class="home">
+        <div class="homepage">
+            <!-- 顶部用户信息 -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed">
+                        </button>
+                        <a class="navbar-brand" href="#">新闻后台管理系统
+                        
+                        </a>
+                    </div>
+                    <!--搜索框  -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <form class="navbar-form navbar-left" role="search" action="searchkey.php" method="get">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="搜索/Search..." name="search" />
+                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <i class="fa fa-tasks"></i>
+                                </a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>
+                  
+                                </a>
+                            </li>
+                            <!-- 用户信息 -->
+                            <li class="dropdown">
+                                <div class="photo"><img src="/images/photo.jpg" alt="这是头像" width="45" height="45" /></div>
+                                <a href="#" class="dropdown-toggle">
+                                    <span class="caret"></span>
+                                </a>
+                            </li>
+                            <!-- 登出 -->
+                            <li class="last"><a href="/logout">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 左侧导航栏 -->
+            <div class="leftlist">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation">
+                        <a href="/main">
+                            <i class="fa fa-tachometer"></i>首页
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/addnews">
+                            <i class="fa fa-pencil"></i>增加新闻内容
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/searchnews">
+                            <i class="fa fa-bar-chart-o"></i>查看新闻内容
+                        </a>
+                    </li>
+                    <li role="presentation" class="active">
+                        <a href="/newslist">
+                            <i class="fa fa-bar-chart-o"></i>查询新闻内容
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/userlist">
+                            <i class="fa fa-bar-chart-o"></i>用户管理
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右侧主要信息显示 -->
+            <div class="rightform">
+                <div class="inforshow">
+                    <div class="infor newsdate">
+                        <div class="row">
+                            <!-- 查询新闻 -->
+                            <div class="con-datashow">
+                                <strong>查询新闻</strong>
+                                <div class="controls">
+                                </div>
+                                <div class="ibox-content">
+                                    <div id="morris-one-line-chart">
+                                        <div class="messagetable newstable">
+                                            <form>
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>新闻标题</th>
+                                                            <th>新闻内容</th>
+                                                            <th>新闻时间</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="newsid"></td>
+                                                            <input type="hidden" name="newsid" value="" />
+                                                            <td class="newstitle"></td>
+                                                            <td class="newscontent"></td>
+                                                            <td class="newstime"></td>
+                                                            <td class="lasttd">
+                                                                <a href='javascript:deletenews($arr[' newsid '])'>删除</a>
+                                                                <a href='updatenews.php?newsid=$arr[' newsid ']'>修改</a></td>
+                                                    </tbody>
+                                                </table>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 分页显示 -->
+                            <nav class="pagesshow">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="searchkey.php?page=1&search=" aria-label="Previous">
+                                            <!-- 返回第一页 -->
+                                            <span aria-hidden="true">首页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <!-- 向前一页 -->
+                                        <a href="/searchkey " aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <!-- 页码 -->
+                                    <li>
+                                        <a href="/searchkey">
+                                        </a>
+                                        <li>
+                                            <!-- 向后一页 -->
+                                            <a href="/searchkey" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                        <!-- 最后一页 -->
+                                        <li>
+                                            <a href="/searchkey" aria-label="Next">
+                                                <span aria-hidden="true">尾页</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

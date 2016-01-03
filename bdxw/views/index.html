@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度新闻</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+</head>
+
+<body>
+    <!-- 总框架 -->
+    <div class="wrap">
+        <!-- 回到顶部 -->
+        <div class="go-top">
+            <span>&nbsp;</span>
+        </div>
+        <div class="main-view">
+            <!-- 头部工具栏 -->
+            <header>
+                <div class="tools-bar">
+                    <div class="tools-left">
+                        <div data-href="http://m.baidu.com/?from=1000376a" class="tools-bar-btn btn-bd"></div>
+                        <div class="tools-bar-btn btn-userhome"></div>
+                    </div>
+                    <div class="tools-right">
+                        <div class="tools-bar-btn btn-search"></div>
+                        <div class="tools-bar-btn btn-sub"></div>
+                    </div>
+                </div>
+            </header>
+            <!-- 导航栏 -->
+            <div class="main-content">
+                <div class="main-list">
+                    <div class="line"></div>
+                    <div class="content">
+                        <ul class="tabs">
+                            <li><b></b><span class="cur">推荐</span></li>
+                            <li><b></b><span>百家</span></li>
+                            <li><b></b><span>本地</span></li>
+                            <li><b></b><span>图片</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 图片轮播 -->
+                <div class="main-sections">
+                    <div class="inedx-view-subpage"></div>
+                    <div class="inedx-view-subpage index-view-subpage-chosen">
+                        <div class="topic-con">
+                            <div class="topic-gallery line-icon">
+                                <div class="g-list">
+                                    <div class="g-item">
+                                        <div class="g-item-innerbox">
+                                            <div class="g-imagebox">
+                                                <img src="/images/timg">
+                                            </div>
+                                            <h4 class="g-title">
+                                            <span>马里遭袭酒店内部血迹斑斑</span>
+                                        </h4>
+                                        </div>
+                                    </div>
+                                    <div class="g-item">
+                                        <div class="g-item-innerbox">
+                                            <div class="g-imagebox">
+                                                <img src="/images/timg2">
+                                            </div>
+                                            <h4 class="g-title">
+                                            <span>湖北现27座古墓 墓主非富即贵</span>
+                                        </h4>
+                                        </div>
+                                    </div>
+                                    <div class="g-item">
+                                        <div class="g-item-innerbox">
+                                            <div class="g-imagebox">
+                                                <img src="/images/timg3">
+                                            </div>
+                                            <h4 class="g-title">
+                                            <span>北京老人楼顶自建5层空中花园</span>
+                                        </h4>
+                                        </div>
+                                    </div>
+                                    <div class="g-item">
+                                        <div class="g-item-innerbox">
+                                            <div class="g-imagebox">
+                                                <img src="/images/timg4.jpg">
+                                            </div>
+                                            <h4 class="g-title">
+                                            <span>用百度钱包支付，单单返现金1%起</span>
+                                        </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="g-icons">
+                                    <i class="cur"></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 热点新闻轮播 -->
+                        <div class="hotword">
+                            <div class="hotword-left">
+                                <span>热点</span>
+                            </div>
+                            <ul class="hotwork-content">
+                                <li class="hotword-item">
+                                    <span>外地车禁上北京二环</span>
+                                    <b class="hotword-item-right"></b>
+                                </li>
+                                <li class="hotword-item">
+                                    <span>美团阿里开撕</span>
+                                    <b class="hotword-item-right"></b>
+                                </li>
+                                <li class="hotword-item">
+                                    <span>章子怡被曝已婚</span>
+                                    <b class="hotword-item-right"></b>
+                                </li>
+                                <li class="hotword-item">
+                                    <span>人社部回应延迟退休</span>
+                                    <b class="hotword-item-right"></b>
+                                </li>
+                                <li class="hotword-item">
+                                    <span>广州2.1亿豪宅</span>
+                                    <b class="hotword-item-right"></b>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 新闻显示 -->
+                        <div class="tab_containe">
+                            <div class="inedx-view-subpage-feed
+">
+                                <div class="index-list">
+                                    <% newslist.forEach(function(item){ %>
+                                        <div class="index-list-item">
+                                            <div class="index-list-main">
+                                                <div class="index-list-image">
+                                                    <i class="videoplay">
+                                                <img src="/images/<%=item.newsimg %>">
+                                            </i>
+                                                </div>
+                                                <div class="index-list-main-text">
+                                                    <div class="index-list-main-title">
+                                                        <%=item.newstitle %>
+                                                    </div>
+                                                    <div class="index-list-main-abs">
+                                                        <%=item.newscontent %>
+                                                    </div>
+                                                </div>
+                                                <div class="index-list-bottom">
+                                                    <div class="index-list-main-time">
+                                                        <b class="tip-reason tip-fillred">网易头条</b>
+                                                        <b class="index-list-main-site">新华网</b>
+                                                        <b class="tip-time"><%=item.addtime %></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <%}); %>
+                                </div>
+                                <!-- 点击加载更多 -->
+                                <div class="refresh-wrap">
+                                    <div class="refresh">点击加载更多</div>
+                                </div>
+                            </div>
+                            <div class="inedx-view-subpage-feed  feed">
+                                <div class="index-list">
+                                    <% newslist.forEach(function(item){ %>
+                                        <div class="index-list-item">
+                                            <div class="index-list-main">
+                                                <div class="index-list-image">
+                                                    <i class="videoplay">
+                                                <img src="/images/<%=item.newsimg %>">
+                                            </i>
+                                                </div>
+                                                <div class="index-list-main-text">
+                                                    <div class="index-list-main-title">
+                                                        <%=item.newstitle %>
+                                                    </div>
+                                                    <div class="index-list-main-abs">
+                                                        <%=item.newscontent %>
+                                                    </div>
+                                                </div>
+                                                <div class="index-list-bottom">
+                                                    <div class="index-list-main-time">
+                                                        <b class="tip-reason tip-fillred">网易头条</b>
+                                                        <b class="index-list-main-site">新华网</b>
+                                                        <b class="tip-time"><%=item.addtime %></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <%}); %>
+                                </div>
+                                <!-- 点击加载更多 -->
+                                <div class="refresh-wrap">
+                                    <div class="refresh">点击加载更多</div>
+                                </div>
+                            </div>
+                            <div class="inedx-view-subpage-feed feed">
+                                <div class="index-list">
+                                    <% newslist.forEach(function(item){ %>
+                                        <div class="index-list-item">
+                                            <div class="index-list-main">
+                                                <div class="index-list-image">
+                                                    <i class="videoplay">
+                                                <img src="/images/<%=item.newsimg %>">
+                                            </i>
+                                                </div>
+                                                <div class="index-list-main-text">
+                                                    <div class="index-list-main-title">
+                                                        <%=item.newstitle %>
+                                                    </div>
+                                                    <div class="index-list-main-abs">
+                                                        <%=item.newscontent %>
+                                                    </div>
+                                                </div>
+                                                <div class="index-list-bottom">
+                                                    <div class="index-list-main-time">
+                                                        <b class="tip-reason tip-fillred">网易头条</b>
+                                                        <b class="index-list-main-site">新华网</b>
+                                                        <b class="tip-time"><%=item.addtime %></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <%}); %>
+                                </div>
+                                <!-- 点击加载更多 -->
+                                <div class="refresh-wrap">
+                                    <div class="refresh">点击加载更多</div>
+                                </div>
+                            </div>
+                            <div class="inedx-view-subpage-feed feed">
+                                <div class="index-list">
+                                    <% newslist.forEach(function(item){ %>
+                                        <div class="index-list-item">
+                                            <div class="index-list-main">
+                                                <div class="index-list-image">
+                                                    <i class="videoplay">
+                                                <img src="/images/<%=item.newsimg %>">
+                                            </i>
+                                                </div>
+                                                <div class="index-list-main-text">
+                                                    <div class="index-list-main-title">
+                                                        <%=item.newstitle %>
+                                                    </div>
+                                                    <div class="index-list-main-abs">
+                                                        <%=item.newscontent %>
+                                                    </div>
+                                                </div>
+                                                <div class="index-list-bottom">
+                                                    <div class="index-list-main-time">
+                                                        <b class="tip-reason tip-fillred">网易头条</b>
+                                                        <b class="index-list-main-site">新华网</b>
+                                                        <b class="tip-time"><%=item.addtime %></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <%}); %>
+                                </div>
+                                <!-- 点击加载更多 -->
+                                <div class="refresh-wrap">
+                                    <div class="refresh">点击加载更多</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 尾部信息 -->
+            <div class="index-footer">
+                <div class="footer">
+                    <div class="item-wrap">
+                        <div class="item feedback">意见反馈</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item app-recommend">应用推荐</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item app-download">客户端</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/javascripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/javascripts/newsindex.js"></script>
+</body>
+
+</html>
