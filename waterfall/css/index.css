@@ -1,0 +1,617 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+html,
+body {
+    font-family: "Helvetica Neue", "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", arial, sans-serif;
+    color: #211922;
+    font-size: 12px;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+button,
+input {
+    font-family: "Helvetica Neue", "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.cn {
+    margin: 0 auto;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+.button {
+    outline: none;
+    position: relative;
+}
+
+.dropdownbutton {
+    display: inline-block;
+    position: relative;
+}
+
+.button.btn {
+    background-color: #f8f8f8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
+    background: -webkit-linear-gradient(#fff, #f0f0f0);
+    background: linear-gradient(#fff, #f0f0f0);
+    border: 1px solid #ccc;
+    color: #5f5f5f;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 1px #fff;
+    white-space: nowrap;
+    background-color: #f0f0f0;
+    padding: 7px 13px;
+}
+
+.button em {
+    display: inline-block;
+    outline: none;
+    position: relative;
+    vertical-align: middle;
+}
+
+a.button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.Input {
+    overflow: hidden;
+    border-top: 1px solid #dfdfdf;
+    padding: 15px 21px 15px 27px;
+    background-color: #f3f3f3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f5f5f5));
+    background: -webkit-linear-gradient(#f0f0f0, #f5f5f5);
+    background: linear-gradient(#f0f0f0, #f5f5f5);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #d6d3ce;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.12) inset;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.12) inset;
+    color: #333;
+    font-size: 14px;
+    padding: 7px;
+}
+
+.contaier {
+    min-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@-webkit-keyframes shade {
+    from {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes shade {
+    from {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes shade {
+    from {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes shade {
+    from {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes shade {
+    from {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*头部搜索*/
+
+.header {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+    height: 54px;
+    position: fixed;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    width: 100%;
+    z-index: 671;
+}
+
+.contaier .headercontainer {
+    left: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.header .headercontainer {
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    display: block;
+    height: 29px;
+    overflow: visible;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 680;
+}
+
+.header .headercontainer .right-con {
+    float: right;
+    margin-right: 7px;
+    width: 236px;
+}
+
+.header .headercontainer .left-con {
+    float: none;
+    margin-left: 7px;
+    margin-right: 243px;
+    padding-right: 14px;
+    width: auto;
+}
+
+
+/*右侧导航栏*/
+
+.rightheader {
+    background-color: #fff;
+    width: 100%;
+}
+
+.header .headercontainer .rightheader {
+    background-color: #fff;
+    float: right;
+}
+
+.user-pint {
+    position: relative;
+    float: right;
+    height: 34px;
+}
+
+.button.btn.notifs {
+    background-color: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
+    background: -webkit-linear-gradient(#fff, #f5f5f5);
+    background: linear-gradient(#fff, #f5f5f5);
+    border-color: #d4d4d4;
+    border-radius: 0 6px 6px 0;
+    height: 34px;
+    padding: 2px 0 0;
+    position: relative;
+    float: right;
+    width: 42px;
+    z-index: 104;
+}
+
+.button.btn.notifs em {
+    width: 22px;
+    height: 21px;
+    background: url("../img/webapp-common-above.png") -148px -66px no-repeat;
+    height: 22px;
+}
+
+.username-btn {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
+    background: -webkit-linear-gradient(#fff, #f5f5f5);
+    background: linear-gradient(#fff, #f5f5f5);
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    background-color: #f5f5f5;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #d4d4d4;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #818181;
+    cursor: pointer;
+    height: 34px;
+    outline: none;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 194px;
+    z-index: 104;
+}
+
+.username-btn.merged {
+    border-bottom-right-radius: 0 0;
+    border-top-right-radius: 0 0;
+    border-right: 0;
+    margin-right: -1px;
+}
+
+.username-link {
+    width: 100%;
+}
+
+.Image {
+    position: relative;
+    max-width: 100%;
+}
+
+.username-btn .pf-image {
+    background-size: 22px 22px;
+    border-radius: 11px;
+    -webkit-box-shadow: 0 0 2px #616161 inset;
+    box-shadow: 0 0 2px #616161 inset;
+    float: left;
+    height: 22px;
+    margin-top: 5px;
+    margin-left: 8px;
+    overflow: hidden;
+    width: 22px;
+}
+
+.pf-name {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 0 0 0 6px;
+}
+
+.Image>.height-con>img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    position: absolute;
+}
+
+
+/*左侧导航栏*/
+
+.button.logoheader {
+    background-color: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
+    background: -webkit-linear-gradient(#fff, #f5f5f5);
+    background: linear-gradient(#fff, #f5f5f5);
+    background-color: #f5f5f5;
+    float: left;
+    height: 34px;
+    padding: 4px 9px;
+    width: 42px;
+}
+
+.button.logoheader.leftRounded {
+    border-radius: 6px 0 0 6px;
+}
+
+.button.logoheader em {
+    width: 23px;
+    height: 24px;
+    background: url("../img/webapp-common-above.png") -172px -58px no-repeat;
+}
+
+.button.listheader {
+    background-color: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
+    background: -webkit-linear-gradient(#fff, #f5f5f5);
+    background: linear-gradient(#fff, #f5f5f5);
+    background-color: #f5f5f5;
+    border-radius: 0 6px 6px 0;
+    float: right;
+    height: 34px;
+    padding: 9px 8px 9px 11px;
+}
+
+.button.listheader em {
+    width: 25px;
+    height: 14px;
+    background: url("../img/webapp-common-above.png") -95px -189px no-repeat;
+    vertical-align: baseline;
+}
+
+
+/*输入框*/
+
+.searchform {
+    position: relative;
+    text-align: left;
+    width: 194px;
+}
+
+.searchform.guided {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+    height: 34px;
+    margin-left: 42px;
+    width: auto;
+}
+
+.searchform.guided.mr {
+    margin-right: 46px;
+}
+
+.typeheader {
+    display: inline-block;
+    position: relative;
+}
+
+.searchform .typeheader.guided {
+    display: block;
+    float: none;
+    width: 100%;
+}
+
+.typeheader.guided .inputwrap {
+    background-color: #e9e9e9;
+    border: 1px solid #d4d4d4;
+    border-left: 0;
+    border-radius: 0 6px 6px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 34px;
+    position: relative;
+    z-index: 670;
+}
+
+.typeheader.guided .inputwrap {
+    border-radius: 0;
+    border-right: 0;
+}
+
+.inputenter.guided {
+    margin-left: 3px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.inputenter .tokenwrap {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    float: left;
+    cursor: text;
+    min-height: 1px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.inputenter.guided .tokenwrap {
+    left: 0;
+    overflow: visible;
+    position: relative;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.inputwrap .inputitem {
+    overflow: hidden;
+    color: #000;
+    display: inline-block;
+    height: auto;
+    margin: 3px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.inputenter.guided .tokenwrap .inputitem {
+    height: 32px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tokenwrap input {
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.inputenter.guided .tokenwrap .inputitem .field {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    height: 32px;
+    padding: 6px 0 6px 4px;
+}
+
+
+/* 图片 */
+
+#wrap {
+    min-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#wrap .box {
+    width: 280px;
+    height: auto;
+    padding: 10px;
+    float: left;
+    margin-top: 80px;
+}
+
+#wrap .box .info {
+    width: 280px;
+    height: auto;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 6px;
+}
+
+#wrap .box .info .pic {
+    width: 260px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#wrap .box .info .pic img {
+    width: 260px;
+    border-radius: 3px;
+}
+
+#wrap .box .info .title {
+    width: 260px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    font-family: "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+    font-weight: bold;
+    border-top: 1px solid #e7e7e7;
+    color: #777;
+}
+
+#wrap .box .info .title a {
+    font-size: 11px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    border-radius: 0 0 6px 6px;
+    display: block;
+    line-height: 14px;
+    padding: 5px 14px;
+    line-height: 15px;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.userimage {
+    position: relative;
+    border-radius: 50%;
+    float: left;
+    height: 30px;
+    margin-right: 5px;
+    width: 30px;
+}
+
+.userimage img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.creatname {
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #999;
+    display: block;
+}
+
+.titletxt {
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #717171;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+/*返回顶部*/
+.scroll {
+    width: 50px;
+    height: 50px;
+    
+    color: #fff;
+    background: url("../img/webapp-common-above.png") -2px -89px no-repeat;
+    line-height: 80px;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+}
