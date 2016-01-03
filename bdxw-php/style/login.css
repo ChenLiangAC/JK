@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    /* url(../img/noise.png),
+    url(../img/1.jpg);*/
+    /* background-repeat: repeat, no-repeat;
+    background-position: left top;
+    background-size: auto, cover;*/
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/*背景*/
+.bg1 {
+    background: rgba(153, 153, 153, 0.36);
+}
+
+a {
+
+    text-decoration: none;
+}
+.controls {
+    text-align: left;
+    position: relative;
+}
+/*登录界面*/
+.login {
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+    min-height: 100%;
+}
+
+.login .log {
+    width: 650px;
+    height: 400px;
+    background: #fff;
+    margin: 150px auto;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 110px auto;
+}
+/*左侧欢迎界面*/
+.log .leftarea {
+    background: #C52225;
+    width: 250px;
+    height: 400px;
+    float: left;
+    border-radius: 10px 0 0 10px;
+}
+/*标志*/
+.log img {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%
+}
+/*文字*/
+.welcometext {
+    height: 100px;
+    position: relative;
+    top: -80px;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.welcometext strong {
+    font-size: 17px;
+}
+
+.welcometext h3 {
+    letter-spacing: 2px;
+    line-height: 0.1;
+}
+/*右侧登录*/
+.rightarea {
+    height: 400px;
+    float: left;
+}
+
+.rightarea .infor {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #B7B7B7;
+    margin-top: 20px;
+    position: relative;
+    left: -43px;
+    top: 10px;
+}
+/*输入框*/
+.inputinner {
+    position: relative;
+    margin: 50px auto;
+    left: 55px;
+}
+
+.form-group .col-sm-10 {
+    width: 400px;
+}
+
+.form-group .col-sm-10 .form-control {
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.form-group .col-sm-offset-2 {
+    margin-left: -45px;
+    margin-top: 20px;
+}
+/*登录和注册按钮*/
+.form-group .col-sm-10 .btn {
+    width: 100px;
+    height: 40px;
+}
+.form-group .col-sm-offset-2 .btn-danger a{
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.form-group .col-sm-offset-2 .btn-default {
+    margin-left: 71px;
+    position: relative;
+    left: 23px;
+    padding-top: 10px;
+}
+
+
+/*选项盒*/
+.controls .checkbox {
+    padding: 0;
+    display: inline-block;
+    margin: 0 !important;
+}
+
+.controls .checkbox.check-transparent label {
+    color: #333;
+    margin: 0;
+    line-height: 24px;
+}
+
+.controls .checkbox.check-transparent input[type=checkbox]:checked + label {
+    color: #C52225;
+}
+
+.controls .checkbox label:before {
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.controls .checkbox label:after {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.controls .checkbox.check-transparent input[type=checkbox] + label:before {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0;
+    -webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.controls .checkbox.check-transparent input[type=checkbox]:checked + label::after {
+    color: #C52225;
+}
+
+.controls a {
+    font-size: 12px;
+    margin-top: 5px;
+    display: inline-block;
+    position: absolute;
+    right: 70px;
+    top: 6px;
+    color: #999;
+}
+
+.controls a:hover {
+    color: #C52225;
+}
+
+.col-sm-10 .input-group-addon {
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 0 4px 4px 0 !important;
+    -moz-border-radius: 0 4px 4px 0 !important;
+    -ms-border-radius: 0 4px 4px 0 !important;
+    -o-border-radius: 0 4px 4px 0 !important;
+    border-radius: 0 4px 4px 0 !important;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    border: 0;
+    height: 40px;
+    margin-left: -25px;
+    position: absolute;
+    top: 20px;
+    right: 85px;
+}
+
+.col-sm-10 .input-group-addon i {
+    width: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 13px;
+    right: 5px;
+}
+
+.input-group-addon i:after {
+    
+    height: 50%;
+    top: 25%;
+}
