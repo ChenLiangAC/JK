@@ -1,0 +1,50 @@
+//sass style
+//-----------------------------------
+// reset.scss
+@mixin box-sizing ($sizing) {
+    -webkit-box-sizing:$sizing;     
+       -moz-box-sizing:$sizing;
+            box-sizing:$sizing;
+}
+$font-family:Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+body,a,dd,div,dl,i,img,input,li,button,p,span,ul,h2 {
+   @include box-sizing(border-box);
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+}
+
+a,dd,div,dl,i,img,input,li,p,span,ul {
+  @include box-sizing(border-box);
+}
+
+button,h1,h2,h3,h4,h5,h6,input,select,textarea {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+img,input,label,select {
+    vertical-align: middle;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+img,button {
+    border: 0;
+}
+
+input {
+    outline: 0;
+    border: 0;
+}
+
+em,i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+

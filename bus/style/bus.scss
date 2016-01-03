@@ -1,0 +1,538 @@
+    //sass style
+    //-----------------------------------
+    // bus.scss
+    @import 'reset';
+    $b-Color:#efefef;
+    $center: center;
+    $Color-w:#fff;
+    $position-R:relative;
+    $displayInb:inline-block;
+    $upBackground:#CE2424;
+    $side-l: left;
+    $side-t: top;
+    $side-b: bottom;
+    $side-r: right;
+    @mixin transform ($deg) {
+        -webkit-transform: rotate($deg);
+        -moz-transform: rotate($deg);
+        transform: rotate($deg);
+    }
+    
+    @mixin border-2 {
+        border: 2px solid #ccc;
+    }
+    
+    @mixin margin($top:0) {
+        margin: $top auto;
+    }
+    
+    @mixin width($w, $h) {
+        width: $w;
+        height: $h;
+    }
+    
+    body {
+        list-style: none;
+        text-align: $center;
+        background: $b-Color;
+        color: $Color-w;
+        cursor: pointer;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $Color-w;
+        &:hover {
+            color: darken($Color-w, 30%);
+        }
+    }
+    
+    // 外部容器
+    .bus-container {
+        @include width(250px, 550px);
+        @include margin(50px);
+        background: darken($b-Color, 60%);
+        border-radius: 5px;
+    }
+    
+    // 公交站牌
+    .bus-content {
+        // 上半部分
+        .up-infor {
+            @include width(auto, 100px);
+            background: $upBackground;
+            border-#{$side-t}-#{$side-l}-radius: 5px;
+            border-#{$side-t}-#{$side-r}-radius: 5px;
+        }
+        // 分界线
+        .line-s {
+            border-#{$side-b}: 2px solid #fff;
+        }
+        // 下半部分
+        .down-infor {
+            @include width(auto, 350px);
+        }
+        // 运营时间
+        .bus-time {
+            @include width(100%, 40px);
+            background: darken($b-Color, 30%);
+            border-#{$side-b}-#{$side-l}-radius: 5px;
+            border-#{$side-b}-#{$side-r}-radius: 5px;
+            position: $position-R;
+            top: 63px;
+            font-size: 10px;
+        }
+    }
+    
+    .bus-content {
+        .up-infor {
+            // 站名
+            .station-name {
+                float: $side-l;
+                display: $displayInb;
+                margin-#{$side-l}: 20px;
+                margin-#{$side-t}: 25px;
+            }
+            // 公交车的简笔图
+            .bus-img {
+                @include width(90px, 90px);
+                margin-#{$side-t}: 11px;
+                float: $side-r;
+            }
+        }
+    }
+    
+    .up-infor {
+        .station-name {
+            .text {
+                font-size: 35px;
+            }
+        }
+    }
+    
+    .bus-img {
+        // 窗户
+        .outside {
+            @include width(80px, 78px);
+            background: $Color-w;
+            border-#{$side-t}-#{$side-l}-radius: 15px;
+            border-#{$side-t}-#{$side-r}-radius: 15px;
+        }
+        //轮子
+        .wheels {
+            @include width(80px, 10px);
+            position: $position-R;
+            left: 1px;
+            top: -1px;
+        }
+        .outside {
+            .windows {
+                @include width(70px, 60px);
+                position: $position-R;
+                top: 5px;
+                left: 5px;
+            }
+            // 车灯
+            .lights {
+                @include width(auto, 15px);
+                top: -2px;
+                left: 1px;
+                position: $position-R;
+            }
+        }
+        .outside {
+            .windows {
+                .inner-w {
+                    border-radius: 3px;
+                    background: $upBackground;
+                }
+                .w1 {
+                    @extend .inner-w;
+                    @include width(40px, 7px);
+                    @include margin;
+                }
+                .w2 {
+                    @extend .inner-w;
+                    @include width(70px, 37px);
+                    @include margin(5px);
+                }
+            }
+        }
+        .outside {
+            // 车灯
+            .lights {
+                .light {
+                    @include width(10px, 10px);
+                    display: inline-block;
+                    border-radius: 50%;
+                    background: $upBackground;
+                }
+                .l1 {
+                    margin-#{$side-r}: 41px;
+                }
+                .l2 {
+                    margin-#{$side-l}: 5px;
+                }
+            }
+        }
+        // 轮子
+        .wheels {
+            .wheel {
+                position: relative;
+                @include width(13px, 13px);
+                background: #fff;
+                border-radius: 2px;
+                display: inline-block;
+            }
+            .wh1 {
+                margin-#{$side-r}: 36px;
+            }
+            .wh2 {
+                margin-#{$side-l}: 6px;
+            }
+        }
+    }
+    
+    // 下半部分
+    .line-stop {
+        @include width(15px, 15px);
+        position: absolute;
+        @include border-2;
+        border-#{$side-r}: transparent;
+        border-#{$side-l}: transparent;
+        border-#{$side-b}: transparent;
+    }
+    
+    .down-infor {
+        .down-inner {
+            @include margin;
+        }
+        .down-inner {
+            .bus-infor {
+                text-align: $side-l;
+                margin-#{$side-l}: 20px;
+            }
+            .station-infor {
+                @extend .bus-infor;
+                margin-#{$side-t}: 3px;
+            }
+            .bus-map {
+                margin-#{$side-t}: 10px;
+            }
+            .bus-infor {
+                span {
+                    font-size: 72px;
+                }
+            }
+            .station-infor {
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            .bus-map {
+                // 始发站
+                .station-dz {
+                    float: $side-r;
+                    @include width(86px, auto);
+                    margin-#{$side-r}: 10px;
+                }
+                .map-lines {
+                    display: table;
+                    @include width(auto, 280px);
+                    position: $position-R;
+                }
+                .station-jx {
+                    float: $side-r;
+                    position: $position-R;
+                    @include width(102px, auto);
+                    left: 30px;
+                    top: -58px;
+                }
+                .station-dz {
+                    .stop {
+                        @include width(10px, 13px);
+                        float: $side-l;
+                        position: $position-R;
+                        left: -5px;
+                        @include border-2;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                // 终点站
+                .station-jx {
+                    .stop2 {
+                        @include width(30px, 33px);
+                        float: $side-l;
+                        position: $position-R;
+                        left: -5px;
+                        @include border-2;
+                        border-#{$side-r}: none;
+                    }
+                    .s1 {
+                        left: 16px;
+                        top: 2px;
+                        @include transform(60deg);
+                    }
+                    .s2 {
+                        top: 12px;
+                        left: 33px;
+                    }
+                    .s3 {
+                        left: 46px;
+                        top: 13px;
+                        @include width(10px, 10px);
+                        @include transform(-75deg);
+                    }
+                    .s4 {
+                        top: 16px;
+                        left: 47px;
+                        @include width(10px, 10px);
+                        @include transform(-132deg);
+                    }
+                    .s5 {
+                        border-#{$side-r}: 2px solid #ccc;
+                        border-#{$side-t}: transparent;
+                        left: 35px;
+                        top: 29px;
+                    }
+                    .s6 {
+                        left: 35px;
+                        top: 42px;
+                    }
+                    .s7 {
+                        @include transform(43deg);
+                        @include width(12px, 12px);
+                        left: 21px;
+                        top: 37px;
+                    }
+                    p {
+                        font-size: 12px;
+                        line-height: 5px;
+                        position: $position-R;
+                        left: -106px;
+                        top: 29px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .map-content {
+        // 路线图
+        .map-lines {
+            .line {
+                display: table;
+                @extend .line-stop;
+            }
+            .line1 {
+                @include width(60px, 60px);
+                left: 84px;
+                border-#{$side-r}: 2px solid #ccc;
+                border-#{$side-t}: transparent;
+            }
+            .line2 {
+                @include width(25px, 25px);
+                left: 142px;
+                top: 62px;
+            }
+            .line3 {
+                @extend .line1;
+                @include width(30px, 30px);
+                left: 139px;
+                top: 65px;
+            }
+            .line4 {
+                @include width(50px, 50px);
+                left: 122px;
+                top: 96px;
+            }
+            .line5 {
+                @extend .line1;
+                @include transform(49deg);
+                left: 51px;
+                top: 62px;
+            }
+            .line6 {
+                @include width(40px, 40px);
+                left: 67px;
+                top: 143px;
+                @include transform(-68deg);
+            }
+            .line7 {
+                @include width(50px, 50px);
+                left: 66px;
+                top: 173px;
+                @include transform(-8deg);
+            }
+            .line8 {
+                @include width(40px, 40px);
+                left: 115px;
+                top: 172px;
+                @include transform(8deg);
+            }
+            .line9 {
+                @extend .line1;
+                @include transform(-22deg);
+                @include width(20px, 20px);
+                left: 144px;
+                top: 181px;
+            }
+            .line10 {
+                @include width(20px, 20px);
+                @extend .line1;
+                left: 148px;
+                top: 202px;
+            }
+            // 圆点
+            .bus-stop-n {
+                @include width(6px, 6px);
+                display: table;
+                position: absolute;
+                background: #ccc;
+                border-radius: 50%;
+                &:hover {
+                    background-color: lighten($upBackground, 10%);
+                }
+            }
+            .point1 {
+                left: 142px;
+                top: 60px;
+            }
+            .point2 {
+                left: 167px;
+                top: 60px;
+            }
+            .point3 {
+                left: 167px;
+                top: 94px;
+            }
+            .bus-o {
+                @include width(10px, 10px);
+                border-radius: 50%;
+                position: absolute;
+                left: 117px;
+                top: 91px;
+                z-index: 1;
+                border: 1px solid $upBackground;
+            }
+            .point4 {
+                margin-#{$side-t}: 2px;
+                margin-#{$side-l}: 2px;
+                z-index: 1;
+                background: $upBackground;
+            }
+            .point5 {
+                left: 74px;
+                top: 133px;
+            }
+            .point6 {
+                left: 57px;
+                top: 175px;
+            }
+            .point7 {
+                left: 112px;
+                top: 168px;
+            }
+            .point8 {
+                left: 157px;
+                top: 175px;
+            }
+            .point9 {
+                left: 166px;
+                top: 196px;
+            }
+            // 站名
+            .stop-txt {
+                @include width(86px, auto);
+                text-align: $side-l;
+                font-size: 10px;
+                position: absolute;
+                &:hover {
+                    color: lighten($upBackground, 10%);
+                }
+            }
+            .t1 {
+                left: 101px;
+                top: 55px;
+            }
+            .t2 {
+                left: 176px;
+                top: 55px;
+            }
+            .t3 {
+                left: 176px;
+                top: 89px;
+            }
+            .t4 {
+                left: 79px;
+                top: 88px;
+                font-size: 11px;
+                font-weight: 200;
+                color: $upBackground;
+            }
+            .t5 {
+                text-align: $side-r;
+                left: -16px;
+                top: 127px;
+            }
+            .t6 {
+                text-align: $side-r;
+                left: -32px;
+                top: 170px;
+            }
+            .t7 {
+                left: 80px;
+                top: 150px;
+            }
+            .t8 {
+                left: 168px;
+                top: 169px;
+            }
+            .t9 {
+                left: 174px;
+                top: 192px;
+            }
+        }
+    }
+    
+    // 运营时间
+    .bus-content {
+        .bus-time {
+            p {
+                text-align: $side-l;
+                font-size: 10px;
+                display: inline-block;
+                padding-#{$side-t}: 3px;
+            }
+        }
+    }
+    
+    // 箭头
+    .arrow {
+        @include width(5px, 50px);
+        position: $position-R;
+        float: $side-l;
+        margin-#{$side-t}: 50px;
+        left: 30px;
+    }
+    
+    .arrow {
+        .line-b {
+            @extend .line-stop;
+            @include width(30px, 30px);
+            border-#{$side-l}: 2px solid $upBackground;
+            border-#{$side-t}: transparent;
+        }
+        .arrow-h {
+            @extend .line-stop;
+            @include transform(-54deg);
+            @include width(10px, 10px);
+            border-color: $upBackground;
+            position: absolute;
+            top: 22px;
+            left: 3px;
+        }
+    }
