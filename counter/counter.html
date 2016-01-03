@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="counter.css">
+    <title>计算器</title>
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="calcu-screen">
+            <input type="text" id="numScreen" class="screen" value="0" maxlength="100" />
+        </div>
+        <div id="calu-btn">
+            <ul>
+                <li class="tool long" onclick="sin()">sin</li>
+                <li class="tool long" onclick="cos()">cos</li>
+                <li class="tool long" onclick="tan()">tan</li>
+                <li class="tool" onclick="clearnumber()">C</li>
+                <li class="tool" onclick="deletenumber()">←</li>
+                <li class="tool" onclick="plus()">+</li>
+                <li class="tool" onclick="minus()">-</li>
+                <li class="tool" onclick="times()">×</li>
+                <li onclick="number(7)">7</li>
+                <li onclick="number(8)">8</li>
+                <li onclick="number(9)">9</li>
+                <li class="tool" onclick="divide()">÷</li>
+                <li onclick="number(4)">4</li>
+                <li onclick="number(5)">5</li>
+                <li onclick="number(6)">6</li>
+                <li class="tool" onclick="persent()">%</li>
+                <li onclick="number(1)">1</li>
+                <li onclick="number(2)">2</li>
+                <li onclick="number(3)">3</li>
+                <li class="tool" onclick="dot()">.</li>
+                <li onclick="number(0)">0</li>
+                <li onclick="dzero()">00</li>
+                <li class="tool equal2" onclick="equal()">=</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="counter2.js"></script>
+</body>
+
+</html>
