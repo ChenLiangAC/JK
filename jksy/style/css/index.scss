@@ -1,0 +1,1876 @@
+//sass style
+//-----------------------------------
+// index.scss
+@import 'reset';
+@mixin margin($top:0) {
+    margin: $top auto;
+}
+
+@mixin box-sizing ($sizing) {
+    -webkit-box-sizing: $sizing;
+    -moz-box-sizing: $sizing;
+    box-sizing: $sizing;
+}
+
+@mixin box-shadow ($s-color, $s-top, $s-lr, $s-bottom) {
+    -webkit-box-shadow: $s-color $s-top $s-lr $s-bottom;
+    -moz-box-shadow: $s-color $s-top $s-lr $s-bottom;
+    box-shadow: $s-color $s-top $s-lr $s-bottom;
+}
+
+@mixin border-radius2($bo) {
+    -webkit-border-radius: $bo;
+    -moz-border-radius: $bo;
+    border-radius: $bo;
+}
+
+@mixin w-h($w1, $h2) {
+    width: $w1;
+    height: $h2;
+}
+
+@mixin width($w) {
+    width: $w;
+}
+
+@mixin width-202 {
+    width: 202px;
+    height: 307px;
+}
+
+@mixin pointer {
+    cursor: pointer;
+}
+
+@mixin overflow {
+    overflow: hidden;
+}
+
+@mixin height($h) {
+    height: $h;
+}
+
+@mixin margin($top:0) {
+    margin: $top auto;
+}
+
+@mixin border($size:1px, $color:#e4e4e4) {
+    border: $size solid $color;
+}
+
+@mixin margin-top($num:0) {
+    margin-top: $num;
+}
+
+@mixin float($fl:left) {
+    float: $fl;
+}
+
+@mixin position($po) {
+    position: $po;
+}
+
+@mixin po-a-p {
+    position: absolute;
+    cursor: pointer;
+}
+
+@mixin display($dis) {
+    display: $dis;
+}
+
+@mixin z-index($z) {
+    z-index: $z;
+}
+
+@mixin line-height($line-h) {
+    line-height: $line-h;
+}
+
+@mixin padding($pl, $pt) {
+    padding: $pl $pt;
+}
+
+@mixin background($img, $bc:#fff) {
+    background: url($img) $bc center center no-repeat;
+}
+
+$side-l: left;
+$side-t: top;
+$side-b: bottom;
+$side-r: right;
+$color-3:#333;
+$color-w:#fff;
+$color-c:#ccc;
+$color-0:#000;
+$color-6d:#6d6d6d;
+$color-35:#35b558;
+$color-f3:#f3f3f3;
+$color-e4:#e4e4e4;
+$color-e8:#e8e8e8;
+$font-size:12px;
+$marginTop: 5px 10px 20px 30px 40px 50px;
+.cf {
+    zoom: 1;
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+        overflow: hidden;
+    }
+}
+
+.w-1000 {
+    @include width(1000px);
+}
+
+.w-1000 {
+    @include margin;
+}
+
+.fl {
+    @include float;
+}
+
+.center {
+    @include width(1000px);
+    @include margin;
+}
+
+.top10 {
+    margin-top: nth($marginTop, 2);
+}
+
+.top20 {
+    margin-top: nth($marginTop, 3);
+}
+
+.top30 {
+    margin-top: nth($marginTop, 4);
+}
+
+.top40 {
+    margin-top: nth($marginTop, 5);
+}
+
+.top50 {
+    margin-top: nth($marginTop, 6);
+}
+
+// 头部信息
+#header {
+    min-height: 70px;
+    @include margin;
+    @include padding(10px, 0);
+}
+
+#header {
+    .headarea {
+        @include position(relative);
+        @include z-index(1200);
+    }
+    .logo {
+        @include float;
+        @include width(113px);
+        margin-top: nth($marginTop, 1);
+    }
+    .searcharea {
+        @include position(absolute);
+        left: 50%;
+        top: 5px;
+        margin: 0 0 0 -190px;
+        @include width(380px);
+        @include height(38px);
+        @include border;
+        @include box-sizing(border-box);
+        z-index: 2000;
+    }
+    .login {
+        float: $side-r;
+        font-size: $font-size;
+        text-align: $side-r;
+        @include line-height(50px);
+        color: $color-3;
+        @include display(inline-block);
+        @include box-sizing(border-box);
+    }
+    // 搜索框
+    .searcharea {
+        .searchtext {
+            padding-right: 55px;
+            @include width(100%);
+            @include height(36px);
+            padding: 9px 150px 9px 15px;
+            border: 0;
+            @include line-height(18px);
+            color: $color-3;
+            background: $color-w;
+            font-size: 12px;
+            text-align: $side-l;
+        }
+    }
+    // 登录注册
+    .login {
+        a {
+            text-decoration: none;
+            color: $color-3;
+        }
+        em {
+            @include padding(0px, 10px);
+        }
+        span a {
+            @extend a;
+        }
+    }
+}
+
+// 搜索按钮和热门词汇
+.headesearch {
+    .searchbtn {
+        @include position(absolute);
+        top: -1px;
+        right: -1px;
+        @include width(40px);
+        @include height(38px);
+        @include border($color: #dfdfdf);
+        color: $color-6d;
+        @include background('../img/search-icon.png');
+        @include pointer;
+        &:hover {
+            @include border($color: #35b558);
+            @include background('../img/searchicon3.png', $bc: #35b558);
+        }
+    }
+    .hotwords {
+        @include position(absolute);
+        @include display(block);
+        top: 9px;
+        right: 48px;
+        font-size: $font-size;
+    }
+    .hotwords {
+        a {
+            @include display(inline-block);
+            @include padding(1px, 3px);
+            margin-left: nth($marginTop, 1);
+            color: #808080;
+            background-color: $color-f3;
+            &:hover {
+                background: $color-c;
+                color: $color-0;
+            }
+        }
+    }
+}
+
+// 进度条
+#loading {
+    @include width(100%);
+    @include height(2px);
+    background: $color-f3;
+    @include overflow;
+}
+
+#loading {
+    .linelong {
+        @include width(1423px);
+        @include height(2px);
+        @include overflow;
+        background: $color-35;
+        background: -webkit-gradient(linear, 10% 10%, 100% 100%, color-stop(0.14, #35b550), color-stop(0.5, #8aca8c), color-stop(1, #2d85ca));
+    }
+}
+
+// 导航栏
+.navposition {
+    @include width(100%);
+    @include height(42px);
+}
+
+#navbox {
+    @include height(42px);
+    @include position(relative);
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #e8e8e8;
+    @include box-shadow(rgba(0, 0, 0, .1), 0, 1px, 5px);
+}
+
+#navbox {
+    .nav {
+        @include height(42px);
+        @include position(relative);
+        @include margin;
+    }
+    .nav {
+        a {
+            color: $color-3;
+            @include line-height(44px);
+            display: inline-block;
+        }
+        .navlist {
+            @include width(740px);
+        }
+        .userneed {
+            @include height(44px);
+            @include position(absolute);
+            top: 0;
+            right: 0;
+            @include line-height(44px);
+            font-size: $font-size;
+        }
+        .userneed {
+            a {
+                @include width(auto);
+                font-size: $font-size;
+                padding: 0;
+                margin-left: nth($marginTop, 3);
+            }
+            span {
+                display: inline-block;
+            }
+        }
+        span {
+            img {
+                @include float;
+                margin-right: nth($marginTop, 1);
+                margin-top: 14px;
+            }
+        }
+        .navlist {
+            a {
+                font-size: 14px;
+                @include padding(0, 22px);
+                padding: 0;
+                margin-right: 47px;
+                &:hover {
+                    color: $color-35;
+                }
+            }
+        }
+    }
+}
+
+#mainpage {
+    // 左侧导航
+    .leftnav {
+        @include position(relative);
+        width: 210px;
+        height:307px;
+        @include float;
+        border-top: 2px solid #35b558;
+        border-right: 0;
+    }
+    // 广告栏
+    .banner {
+        @include width(570px);
+        @include height(307px);
+        background: $color-c;
+        @include border;
+        border-right: 0;
+        @include float;
+        margin-left: 10px;
+    }
+    //右侧信息
+    .rightnav {
+        @include float;
+        @include width-202;
+        @include border;
+        overflow: hidden;
+    }
+}
+
+@mixin t-b-0 {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+// 左侧导航
+.leftnav {
+    ul {
+        overflow: hidden;
+        @include display(block);
+        @include width(210px);
+        @include height(305px);
+        background: $color-w;
+        @include border;
+        @include t-b-0;
+        @include z-index(800);
+        position: absolute;
+        border-bottom-width: 0px;
+    }
+    li {
+        >div {
+            @include width(208px);
+            @include height(37px);
+            @include line-height(37px);
+            color: $color-3;
+            @include padding(0, 15px);
+            font-size: 13px;
+            background: $color-w url(../img/more-icon.png) 186px center no-repeat;
+            border-bottom: 1px solid #f5f5f5;
+            background-size: 6px 10px;
+            cursor: pointer;
+            font-weight: 400;
+            &:hover {
+                color: $color-3;
+                border-top: 1px solid #e4e4e4;
+                border-bottom: 1px solid #e4e4e4;
+                margin-left: 0px;
+                height: 38px;
+                margin-top: -1px;
+                /* border-left: 2px solid #35b558;*/
+                padding-left: 18px;
+                border-right: 3px solid $color-w;
+                width: 213px;
+                background: $color-w;
+                @include box-shadow(1px, 1px, 2px, rgba(0, 0, 0, .1));
+                .lessonlistshow {
+                    display: block;
+                }
+            }
+        }
+        div {
+            a {
+                color: $color-3;
+                &:hover {
+                    color: $color-35;
+                }
+            }
+        }
+        &:hover {
+            border-#{$side-l}: 2px solid #35b558;
+        }
+        .lessonlistshow {
+            @include box-shadow(2px, 2px, 4px, rgba(0, 0, 0, .1));
+            @include width(401px);
+            overflow: hidden;
+            min-height: 410px;
+            background: $color-w;
+            @include border;
+            @include po-a-p;
+            left: 209px;
+            top: -2px;
+            @include z-index(1000);
+            border-left: 0;
+            display: none;
+            padding-#{$side-b}: 30px;
+        }
+        .lessonlistshow {
+            a {
+                &:hover {
+                    color: $color-35;
+                }
+            }
+            div {
+                @include float;
+                @include width(399px);
+            }
+            dl {
+                margin: 0 10px;
+                overflow: hidden;
+            }
+            dt {
+                display: block;
+                border-#{$side-b}: 1px solid #f5f5f5;
+                @include height(37px);
+                @include line-height(45px);
+                a {
+                    color: $color-3;
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+            }
+            dd {
+                list-style: none;
+                margin-#{$side-l}: -8px;
+                @include padding (3px, 0);
+                a {
+                    @include height (14px);
+                    @include line-height (14px);
+                    margin-#{$side-b}: 10px;
+                    margin-#{$side-t}: 4px;
+                    @include padding (0, 7px);
+                    color: #666;
+                    @include display (inline-block);
+                    font-size: $font-size;
+                    border-#{$side-l}: 1px solid #e0e0e0;
+                    @include float;
+                    float: left;
+                    white-space: nowrap;
+                    font-weight: 400;
+                }
+            }
+        }
+        .bp {
+            @include width (591px);
+        }
+    }
+}
+
+@mixin background-size($ud, $lr) {
+    background-size: $ud $lr;
+}
+
+@mixin b-t-0 {
+    bottom: 0;
+    border-top: 0;
+}
+
+$color-f9:#f9f9f9;
+.line1 {
+    @include po-a-p;
+    @include z-index(2000);
+    @include w-h (210px, 9px);
+    @include background (url(../img/alt-d.png), $color-f9);
+    @include background-size (7px, 3px);
+    @include border;
+    @include b-t-0;
+}
+
+@mixin background-s($link, $po1, $po2) {
+    background: $link $po1 $po2 no-repeat;
+}
+
+@mixin b-h {
+    display: block;
+    overflow: hidden;
+}
+
+// 箭头
+#bannerleft {
+    @include po-a-p;
+    left: 0;
+    top: 50%;
+    margin-#{$side-t}: -25px;
+    @include z-index(800);
+    @include display(none);
+}
+
+#bannerleft2 {
+    @extend #bannerleft;
+}
+
+#bannerleft3 {
+    @extend #bannerleft;
+}
+
+#bannerleft4 {
+    @extend #bannerleft;
+}
+
+.leftarrow {
+    @include w-h (40px, 50px);
+    @include background-s(url(../img/banner-left.png), -10px, -5px);
+    @include b-h;
+    &:hover {
+        @include background-s(url(../img/banner-left.png), -10px, -65px);
+        @include w-h (40px, 50px);
+        @include b-h;
+        cursor: pointer
+    }
+}
+
+#bannerright {
+    @include po-a-p;
+    right: 0;
+    top: 50%;
+    margin-#{$side-t}: -25px;
+    @include z-index(80);
+    display: none;
+}
+
+#bannerright2 {
+    @extend #bannerright;
+}
+
+#bannerright3 {
+    @extend #bannerright;
+}
+
+#bannerright4 {
+    @extend #bannerright;
+}
+
+.rightarrow {
+    @extend .leftarrow;
+    @include background-s(url(../img/banner-right.png), -10px, -5px);
+    &:hover {
+        @extend .leftarrow;
+        @include background-s(url(../img/banner-right.png), -10px, -65px);
+    }
+}
+
+@mixin po-t-h {
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin po-ab-h {
+    position: absolute;
+    overflow: hidden;
+}
+
+@mixin backface-visibility {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+@mixin transition-b {
+    -webkit-transition-property: -webkit-transform, left, top;
+    -webkit-transition-duration: 0s;
+    -webkit-transform: translate3d(0px, 0, 0);
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: -moz-transform, left, top;
+    -moz-transition-duration: 0s;
+    -moz-transform: translate3d(0px, 0, 0);
+    -moz-transition-timing-function: ease;
+    -o-transition-property: -o-transform, left, top;
+    -o-transition-duration: 0s;
+    -o-transition-timing-function: ease;
+    -o-transform: translate(0px, 0);
+    -ms-transition-property: -ms-transform, left, top;
+    -ms-transition-duration: 0s;
+    -ms-transform: translate3d(0px, 0, 0);
+    -ms-transition-timing-function: ease;
+    transition-property: transform, left, top;
+    transition-duration: 0s;
+    transform: translate3d(0px, 0, 0);
+    transition-timing-function: ease;
+}
+
+// banner广告栏
+.banner {
+    .container {
+        @include w-h (100%, 305px);
+        @include margin;
+        @include po-t-h;
+        @include backface-visibility;
+        @include z-index(1);
+    }
+    .swiperwrapper {
+        @include po-ab-h;
+        @include w-h (100%, 305px);
+        left: 0;
+    }
+    .swiperslide {
+        @include w-h (569px, 305px);
+        position: relative;
+        text-align: center;
+        float: left;
+        &.banner1 {
+            background: url(../img/banner1.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+        }
+        &.banner2 {
+            background: url(../img/banner2.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+        }
+        &.banner3 {
+            background: url(../img/banner3.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+        }
+        &.banner4 {
+            background: url(../img/banner4.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+        }
+        &.banner5 {
+            background: url(../img/banner5.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+        }
+    }
+    .swiperbox {
+        @include w-h (570px, 305px);
+        @include margin;
+        padding-#{$side-t}: 50px;
+        padding-#{$side-l}: 50px;
+        text-align: $side-l;
+    }
+    .bannerinfor {
+        font-size: 20px;
+        font-weight: 400;
+        color: #eee;
+        margin-#{$side-b}: 30px;
+    }
+    .shortlines {
+        @include po-a-p;
+        left: 0;
+        text-align: center;
+        bottom: 15px;
+        @include width(100%);
+        @include z-index(800);
+        .pages {
+            display: inline-block;
+            @include w-h (39px, 7px);
+             background: url(../img/s1.jpg) center center no-repeat;
+
+            margin: 0 6px;
+            cursor: pointer;
+        }
+        .pages-c {
+             background: url(../img/s2.jpg) center center no-repeat;
+        }
+    }
+}
+
+// 右侧
+@mixin green-tr {
+        -webkit-transition-duration: .8s;
+        transition-duration: .8s;
+        -webkit-transition-property: background;
+        transition-property: background;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .greenbtn {
+        &:hover {
+            @extend button:hover;
+        }
+    }
+    .greenbtn3 {
+        display: inline-block;
+        color: $color-w;
+        border-radius: 3px;
+        font-size: 18px;
+        background: #7bda95;
+        @include green-tr;
+    }
+    .greenbtn2 {
+        @extend .greenbtn3;
+        color: $color-35;
+        font-size: 16px;
+        background: #f3fff6;
+        border: 1px solid #35b558;
+        &:hover {
+            @extend button:hover;
+        }
+    }
+.rightnav {
+    .freebox {
+        @include height (153px);
+        border-bottom: 1px solid #e4e4e4;
+        a {
+            padding: 20px;
+            display: block;
+            h2 {
+                font-size: 15px;
+                color: #666;
+            }
+            p {
+                color: $color-35;
+                font-size: $font-size;
+                margin: 10px 0 2px;
+                @include line-height (1.6);
+                span {
+                    padding: 5px;
+                    color: $color-35;
+                }
+                .pad0 {
+                    padding-left: 0;
+                    color: $color-35;
+                }
+            }
+        }
+        button {
+            @include w-h (168px, 34px);
+            @include line-height (14px);
+            font-size: 14px;
+            border-radius: inherit;
+            margin-top: 10px;
+            cursor: pointer;
+            border-color: #7bda95;
+            outline: 0;
+            transition: border-color 1s, background 1s;
+            &:hover {
+                background: $color-35;
+                color: $color-w;
+                border-color: $color-35;
+            }
+        }
+    }
+    
+
+}
+
+// 热门推荐
+.navhotclasses {
+    ul {
+        @include height (41px);
+        background: url(../img/hotnav.jpg) 0 100% repeat-x;
+        li {
+            @include width(16.6%);
+            @include float;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            @include padding (10px, 0);
+            color: #666;
+            &:hover {
+                background: url(../img/alt-J.png) center bottom no-repeat;
+                border-#{$side-b}: 2px solid #35b558;
+                @include background-size (10px, 4px);
+                color: $color-35;
+            }
+        }
+        .on {
+            @extend li:hover;
+        }
+    }
+}
+
+.lessonlist {
+    ul {
+        @include width(1100px);
+        margin-#{$side-t}: 0;
+        li {
+            margin-right: nth($marginTop, 3);
+            background: 0 0;
+            margin-bottom: nth($marginTop, 3);
+            @include w-h(235px, 220px);
+            @include float;
+        }
+    }
+    &.lesson1 {
+        display: block;
+    }
+    &.lesson2,
+    &.lesson3,
+    &.lesson4,
+    &.lesson5,
+    &.lesson6 {
+        display: none;
+    }
+    .lessonimgbox {
+        @include w-h(235px, 130px);
+        @include border;
+        position: relative;
+        border-bottom: 0;
+    }
+    .lessonkeep {
+        @include po-a-p;
+        top: 10px;
+        left: 10px;
+        @include w-h(16px, 16px);
+        display: none;
+        background: url(../img/keep1.png);
+        background-size: 16px 16px;
+        @include z-index(101);
+        &:hover {
+            background: url(../img/keep2.png);
+            @include background-size(16px, 16px);
+        }
+    }
+    .lessonimgbox {
+        .freeicon {
+            @include w-h(38px, 22px);
+            display: inline-block;
+            @include po-a-p;
+            top: -2px;
+            right: 8px;
+            @include z-index(101);
+            @include background-s(url(../img/icon_xubi.png), -58px, -43px);
+        }
+        .lessonimg {
+            @include w-h(100%, 130px);
+        }
+    }
+    .lessoninfor {
+        @include po-t-h;
+        padding: 10px;
+        @include z-index(200);
+        @include height(88px);
+        background: $color-w;
+        @include border;
+        border-top: 0;
+        h2 {
+            font-size: 14px;
+            color: $color-3;
+            @include line-height(18px);
+            @include height(36px);
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .timeandicon {
+            color: #808080;
+            font-size: $font-size;
+            position: relative;
+        }
+        p {
+            color: gray;
+            font-size: $font-size;
+            @include line-height(18px);
+            @include height(0);
+            overflow: hidden;
+            opacity: 0;
+            margin-#{$side-b}: 10px;
+            display: none;
+        }
+        .timeandicon {
+            .time-icon {
+                @include background-s(url(../img/clok.png), 0, 0);
+                @include w-h(14px, 14px);
+                display: block;
+                @include float;
+                margin-#{$side-r}: 8px;
+                @include background-size(14px, 14px);
+            }
+        }
+        .lessoniconbox {
+            position: absolute;
+            right: 0;
+            text-align: $side-r;
+            bottom: 0px;
+            a {
+                display: inline-block;
+                @include w-h(16px, 16px);
+                margin-#{$side-l}: 3px;
+                img {
+                    @extend a;
+                    display: block;
+                }
+            }
+        }
+    }
+    .lesson-info-h2 {
+        a {
+            color: $color-3;
+        }
+    }
+    .lessonplay {
+        background: $color-0;
+        background: rgba(0, 0, 0, .4);
+        @include w-h(100%, 100%);
+        @include z-index(100);
+        @include po-a-p;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        .playericon {
+            @include po-a-p;
+            @include z-index(120);
+            @include w-h(50px, 50px);
+            display: block;
+            left: 50%;
+            margin-#{$side-l}: -25px;
+            top: 50%;
+            margin-#{$side-t}: -25px;
+            @include background-s(url(../img/player_icon.png), 0, 0);
+            @include background-size(50px, 50px);
+        }
+    }
+}
+
+//职业路径图
+.learnbox {
+    .learntitle {
+        margin-#{$side-b}: 16px;
+        strong {
+            font-size: 18px;
+            color: $color-3;
+            @include float;
+            font-weight: 500;
+            a {
+                color: $color-3;
+            }
+        }
+        .way {
+            font-size: $font-size;
+            line-height: 13px;
+            color: $color-w;
+            background: #999;
+            text-align: center;
+            border-radius: 50%;
+            display: block;
+            @include w-h(13px, 13px);
+            @include float;
+            margin: 5px 8px 0;
+            cursor: pointer;
+        }
+        .morelesson {
+            font-size: $font-size;
+            color: #2d85ca;
+            float: $side-r;
+            margin-#{$side-t}: 4px;
+        }
+    }
+    @mixin border-w {
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-style: solid none solid solid;
+        border-top-color: rgb(228, 228, 228);
+        border-bottom-color: rgb(228, 228, 228);
+        border-left-color: rgb(228, 228, 228);
+    }
+    .learncards {
+        a {
+            @include w-h(20%, 300px);
+            @include border;
+            @include float;
+            text-align: center;
+            display: block;
+            @include border-w;
+            border-#{$side-r}: 0;
+            overflow: hidden;
+            margin-#{$side-t}: 0px;
+            h2 {
+                color: $color-3;
+                font-size: 15px;
+                margin-#{$side-b}: 20px;
+                @include height(18px);
+                overflow: hidden;
+            }
+            img {
+                margin-#{$side-b}: 24px;
+            }
+            p {
+                @include w-h(199px, 20px);
+                font-size: $font-size;
+                color: #666;
+                @include line-height(20px);
+                overflow: hidden;
+            }
+            .greenbtn2 {
+                @include w-h(140px, 34px);
+                @include line-height(34px);
+               @extend  .greenbtn2;
+                text-align: center;
+                margin-#{$side-t}: 20px;
+                cursor: pointer;
+                outline: 0;
+            }
+            .waitingbtn {
+                @extend .greenbtn2;
+                background: #f5f5f5;
+                color: #808080;
+                @include border;
+                outline: 0;
+            }
+            &:hover {
+                border: 1px solid $color-35;
+                margin-top: 0px;
+                .greenbtn2 {
+                    background: $color-35;
+                    color: #fff;
+                }
+                .waitingbtn {
+                    background: #ddd;
+                }
+            }
+        }
+        .bt {
+            border-top: 0;
+            &:hover {
+                @extend .waitingbtn:hover;
+                margin-top: -1px;
+            }
+        }
+        .last {
+            border-right: 1px solid #e4e4e4;
+        }
+    }
+}
+
+// 知识体系图
+@mixin perspective {
+    -moz-perspective: 167px;
+    -webkit-perspective: 167px;
+    perspective: 167px;
+}
+
+@mixin card {
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -moz-animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+
+.maptree {
+    border-bottom: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    @include w-h(1000px, 481px);
+    overflow: hidden;
+    .map24 {
+        @include width(1050px);
+    }
+    .cardtransform {
+        @include w-h(167px, 120px);
+        @include border;
+        border-bottom: 0;
+        border-right: 0;
+        @include float;
+        display: block;
+        text-align: center;
+        position: relative;
+        @include perspective;
+        .tr {
+            @include w-h(100%, 100%);
+            @include backface-visibility;
+            @include card;
+        }
+        .front {
+            @include w-h(167px, 120px);
+            display: inline-block;
+            border-bottom: 1px solid #E4E4E4;
+            background-color: $color-w;
+            padding-top: 15px;
+            img {
+                margin-bottom: 5px;
+                @include w-h(40px, 40px);
+            }
+            span {
+                font-size: 14px;
+                color: $color-35;
+            }
+            h2 {
+                margin-bottom: 5px;
+                font-size: 15px;
+                color: $color-3;
+            }
+        }
+        @mixin transformY($y) {
+            -moz-transform: rotateY($y);
+            -webkit-transform: rotateY($y);
+            transform: rotateY($y);
+        }
+        &.flipped .front {
+            display: none;
+            @include transformY(-180deg);
+        }
+        .back {
+            border-bottom: 1px solid #E4E4E4;
+            padding-top: 30px;
+            background-color: #f5f5f5;
+            opacity: 0;
+            @include w-h(167px, 120px);
+            @include margin;
+            @include transformY(180deg);
+            strong {
+                display: block;
+                font-size: 14px;
+                color: #666;
+                margin-#{$side-b}: 10px;
+                font-weight: 400;
+            }
+            @mixin border-radius {
+                border-radius: inherit;
+                -webkit-border-radius: inherit;
+                -moz-border-radius: inherit;
+            }
+            .greenbtn {
+                font-size: 16px;
+                color: $color-w;
+                text-align: center;
+                @include border-radius;
+                @include w-h(140px, 36px);
+                cursor: pointer;
+                &:hover {
+                    background: $color-35;
+                    color: $color-w;
+                    border-color: $color-35;
+                }
+            }
+        }
+        &.flipped .back {
+            opacity: 1;
+            @include transformY(0deg);
+        }
+    }
+}
+
+// 精品课程
+.excellent-title {
+    margin-bottom: 16px;
+    strong {
+        font-size: 18px;
+        color: $color-3;
+        @include float;
+        font-weight: 500;
+        a {
+            color: $color-3;
+        }
+    }
+    .way {
+        font-size: $font-size;
+        @include line-height(13px);
+        color: $color-w;
+        background: #999;
+        text-align: center;
+        border-radius: 50%;
+        display: block;
+        @include w-h(13px, 13px);
+        @include float;
+        margin: 5px 8px 0;
+        cursor: pointer;
+    }
+    .morelesson {
+        font-size: $font-size;
+        color: #2d85ca;
+        float: $side-r;
+        margin-#{$side-t}: 4px;
+    }
+}
+
+@mixin tr-border-color {
+    -webkit-transition: border-color .3s;
+    -moz-transition: border-color .3s;
+    transition: border-color .3s;
+}
+
+@mixin t-w {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#excellent {
+    .lesson-card {
+        position: relative;
+        @include w-h(235px, 261px);
+        padding: 16px;
+        @include border;
+        font-size: $font-size;
+        @include tr-border-color;
+        @include box-sizing(border-box);
+        margin-#{$side-l}: 20px;
+        &:nth-child(4n+1) {
+            margin-#{$side-l}: 0;
+        }
+        a {
+            color: #666;
+        }
+        h2 {
+            overflow: hidden;
+            @include t-w;
+            width: 80%;
+            margin-bottom: 15px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+        }
+        .images {
+            overflow: hidden;
+            margin-bottom: 15px;
+            img {
+                @include w-h(100%, 100%);
+                display: block;
+            }
+        }
+        .others {
+            position: relative;
+            @include z-index(20);
+            color: gray;
+            @include line-height(18px);
+            span {
+                overflow: hidden;
+                @include t-w;
+                display: inline-block;
+                margin-right: 6px;
+            }
+            .lesson-count {
+                max-width: 40px;
+            }
+            .collect {
+                overflow: hidden;
+                @include w-h(56px, 20px);
+                float: $side-r;
+                .btn {
+                    display: block;
+                    @include w-h(100%, 20px);
+                    padding: 0;
+                    line-height: 18px;
+                }
+            }
+        }
+        $color-ea:#eaeaea;
+        @mixin transition {
+            -webkit-transition: background-color .8s, border-color .8s;
+            -moz-transition: background-color .8s, border-color .8s;
+            transition: background-color .8s, border-color .8s;
+        }
+        .btn {
+            height: 26px;
+            padding: 0 15px;
+            font-size: 12px;
+            @include border-radius2(3px);
+            @include transition;
+            background: $color-ea;
+            border-color: $color-ea;
+            color: #666;
+            display: inline-block;
+            line-height: 24px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+        .btn-def {
+            background: $color-35;
+            border-color: $color-35;
+            color: $color-w;
+        }
+        .greenbtn {
+            display: inline-block;
+            color: $color-w;
+            @include border-radius2(3px);
+            font-size: $font-size;
+            background: $color-35;
+            -webkit-transition-duration: .8s;
+            transition-duration: .8s;
+            -webkit-transition-property: background;
+            transition-property: background;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            &:hover {
+                background: #66d178;
+                color: $color-w;
+            }
+        }
+        @mixin tra-time {
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            transition: .3s;
+        }
+        .describe {
+            @include po-a-p;
+            left: 0;
+            @include z-index(10);
+            @include w-h(100%, 100%);
+            background: rgba(255, 255, 255, .9);
+            opacity: 0;
+            top: 0;
+            text-align: center;
+            visibility: hidden;
+            @include tra-time;
+            .picture {
+                overflow: hidden;
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                @include w-h(50px, 50px);
+                margin-left: -25px;
+                @include border-radius2(50%);
+                img {
+                    @include w-h(100%, 100%);
+                }
+            }
+            .name {
+                position: absolute;
+                top: 74px;
+                left: 0;
+                width: 100%;
+                &:hover {
+                    color: $color-35;
+                }
+            }
+            .text {
+                overflow: hidden;
+                position: absolute;
+                top: 100px;
+                left: 0;
+                @include w-h(100%, 40px);
+                @include padding(0, 16px);
+                text-align: $side-l;
+                line-height: 20px;
+                word-wrap: break-word;
+                word-break: break-all;
+                &:hover {
+                    color: $color-35;
+                }
+            }
+            .btn {
+                position: absolute;
+                top: 164px;
+                left: 50%;
+                @include w-h(100px, 28px);
+                margin-#{$side-l}: -50px;
+                font-size: 14px;
+                line-height: 26px;
+                @include border-radius2(2px);
+            }
+        }
+        &:hover {
+            border-color: $color-35;
+            .describe {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// WIKI
+.wiki-title {
+    margin-bottom: 16px;
+    strong {
+        font-size: 18px;
+        color: $color-3;
+        float: $side-l;
+        font-weight: 500;
+        a {
+            color: $color-3;
+        }
+    }
+    .way {
+        font-size: 12px;
+        @include line-height(13px);
+        color: $color-w;
+        background: #999;
+        text-align: center;
+        @include border-radius2(50%);
+        display: block;
+        @include w-h(13px, 13px);
+        float: $side-l;
+        margin: 5px 8px 0;
+        cursor: pointer;
+    }
+    .morelesson {
+        font-size: $font-size;
+        color: #2d85ca;
+        float: $side-r;
+        margin-top: 4px;
+    }
+}
+
+.wikibox {
+    .one-wiki {
+        @include w-h(333.3px, 370px);
+        float: $side-l;
+        padding: 15px;
+        @include border;
+        &.w2 {
+            border-left: 0;
+            &:hover {
+                .w1 {
+                    @include border($color: $color-35);
+                }
+            }
+        }
+        &.w3 {
+            border-left: 0;
+            &:hover {
+                @include border($color: $color-35);
+                .w2 {
+                    @include border($color: $color-35);
+                }
+            }
+        }
+        &:hover {
+            @include border($color: $color-35);
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        dl {
+            dd {
+                text-align: center;
+                width: 142px;
+                @include float;
+                &:nth-child(1) {
+                    margin-#{$side-r}: 15px;
+                }
+                .imgbox {
+                    position: relative;
+                    @include w-h(142px, 200px);
+                    background: #999;
+                    @include border-radius2(5px);
+                    .look {
+                        @include po-a-p;
+                        @include width(40px);
+                        @include z-index(10);
+                        right: -10px;
+                        top: -13px;
+                        @include background(url(../img/look.png));
+                        @include background-size(100%, 100%);
+                        height: 20px;
+                        display: none;
+                    }
+                    @mixin animation {
+                        -moz-animation: ffk-animate2 1s ease forwards;
+                        -webkit-animation: ffk-animate2 1s ease forwards;
+                        -o-animation: ffk-animate2 1s ease forwards;
+                        -ms-animation: ffk-animate2 1s ease forwards;
+                        animation: ffk-animate2 1s ease forwards;
+                    }
+                    img {
+                        &.fengmian {
+                            width: 142px;
+                            height: 200px;
+                            @include border-radius2(5px);
+                            @include animation;
+                        }
+                    }
+                }
+                h3 {
+                    font-size: 13px;
+                    color: #333;
+                    height: 13px;
+                    display: block;
+                    @include t-w;
+                    overflow: hidden;
+                    line-height: 13px;
+                    @include margin(10px);
+                }
+                span {
+                    font-size: $font-size;
+                    color: #999;
+                    display: block;
+                }
+                a {
+                    &:hover {
+                        h3,
+                        span {
+                            color: $color-35;
+                        }
+                    }
+                }
+            }
+        }
+        ul {
+            margin-top: 10px;
+            li {
+                font-size: $font-size;
+                color: #999;
+                @include line-height(12px);
+                margin-bottom: 8px;
+                display: block;
+                a {
+                    color: #999;
+                    &:hover {
+                        color: $color-35;
+                    }
+                }
+                p {
+                    width: 200px;
+                    display: block;
+                    @include t-w;
+                    overflow: hidden;
+                    @include float;
+                }
+                span {
+                    text-align: $side-r;
+                    display: block;
+                    float: $side-r;
+                    @include width(90px);
+                }
+            }
+        }
+    }
+}
+
+// 战略合作企业，媒体报道，合作院校
+// 战略合作企业
+
+@mixin transition2 {
+    -webkit-transition-property: -webkit-transform, left, top;
+    -webkit-transition-duration: 0s;
+    -webkit-transform: translate3d(0px, 0, 0);
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: -moz-transform, left, top;
+    -moz-transition-duration: 0s;
+    -moz-transform: translate3d(0px, 0, 0);
+    -moz-transition-timing-function: ease;
+    -o-transition-property: -o-transform, left, top;
+    -o-transition-duration: 0s;
+    -o-transition-timing-function: ease;
+    -o-transform: translate(0px, 0);
+    -ms-transition-property: -ms-transform, left, top;
+    -ms-transition-duration: 0s;
+    -ms-transform: translate3d(0px, 0, 0);
+    -ms-transition-timing-function: ease;
+    transition-property: transform, left, top;
+    transition-duration: 0s;
+    transform: translate3d(0px, 0, 0);
+    transition-timing-function: ease;
+}
+
+.companyshow {
+    @include border;
+    position: relative;
+    padding: 20px;
+    @include height(90px);
+}
+
+.s-container {
+    @include w-h(100%, 305px);
+    @include margin;
+    @include po-t-h;
+    @include z-index(1);
+}
+
+
+    .swiperwrapper {
+        @include po-a-p;
+        width: 100%;
+        @include transition2;
+        left: 0;
+        overflow: hidden;
+        a {
+            width: 159px;
+        }
+        img {
+            @include w-h(150px, 50px);
+            @include border;
+        }
+    }
+
+
+.s-container2 {
+    @extend .s-container;
+}
+
+.swiper-car-box {
+    @include border;
+    @include height(150px);
+    height: 150px;
+    padding: 20px;
+    position: relative;
+}
+
+.slideimg {
+    float: left;
+    position: relative;
+    text-align: center;
+    @include height(305px);
+    height: 305px;
+}
+
+.s-car {
+    @include w-h(100%, 110px);
+    .swiperwrapper {
+        a {
+            width: 136px;
+            img {
+                @include w-h(110px, 110px);
+            }
+        }
+    }
+}
+
+.media {
+    @include border;
+    position: relative;
+    padding: 20px;
+    @include height(90px);
+}
+
+// 尾部信息
+#footer {
+    min-width: 1000px;
+    .infor-of-jike {
+        background: #fafafa;
+        border-top: 1px solid #E4E4E4;
+        border-bottom: 1px solid #e4e4e4;
+        .inforbox {
+            @include width(1000px);
+            @include margin;
+            min-height: 200px;
+            dl {
+                @include width(185px);
+                padding-left: 30px;
+                color: gray;
+                margin: 25px 0;
+                @include float;
+                border-left: 1px solid #E4E4E4;
+                min-height: 175px;
+                dt {
+                    font-size: 14px;
+                    color: #666;
+                    font-weight: 500;
+                }
+                dd {
+                    font-size: $font-size;
+                    margin-#{$side-t}: 10px;
+                }
+            }
+            a {
+                color: #808080;
+                padding-#{$side-l}: 5px;
+                &:hover {
+                    color: $color-35;
+                }
+            }
+        }
+    }
+    .s-share {
+        @include width(260px);
+        @include float;
+        min-height: 226px;
+        border-left: 1px solid #E4E4E4;
+        padding: 20px 0 0 40px;
+        .text {
+            font-size: 15px;
+            color: $color-35;
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .app-dl {
+            a {
+                padding-#{$side-l}: 0;
+                &:hover {
+                    p,
+                    strong {
+                        color: $color-35;
+                    }
+                }
+            }
+            img {
+                display: block;
+                @include float;
+                margin-#{$side-r}: 15px;
+            }
+            strong {
+                font-size: 18px;
+                color: #666;
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: 14px;
+                color: gray;
+                @include background-s(url(../img/more-icon2.png), 160px, center);
+                @include background-size(7px, 13px);
+            }
+        }
+        .share {
+            height: 32px;
+            margin-#{$side-t}: 15px;
+            a {
+                @include background-s(url(../img/icon_xubi.png), -23px, 0);
+                @include w-h(32px, 32px);
+                display: inline-block;
+                @include float;
+                margin-right: 10px;
+                position: relative;
+                &.sinaicon {
+                    background-position: -23px 0;
+                    &:hover {
+                        background-position: -23px -40px;
+                    }
+                }
+                &.tiebaicon {
+                    background-position: -145px 0;
+                    &:hover {
+                        background-position: -145px -40px;
+                    }
+                }
+                &.qqicon {
+                    background-position: -23px -82px;
+                    &:hover {
+                        background-position: -23px -122px;
+                    }
+                }
+            }
+        }
+    }
+    .online {
+        margin-top: 0px;
+        padding-left: 35px;
+        a {
+            display: block;
+            padding: 0;
+            &:hover {
+                p,
+                h5 {
+                    color: $color-35;
+                }
+            }
+        }
+        .kefuicon {
+            @include float;
+            @include w-h(40px, 40px);
+            margin-left: -40px;
+            background: url(../img/kefu.png) no-repeat -40px 0/80px 40px;
+            &.online {
+                background-position: 0 0;
+            }
+        }
+        h5 {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 2px;
+            @include line-height(22px);
+            padding-left: 5px;
+        }
+        p {
+            color: gray;
+            font-size: $font-size;
+            padding-left: 5px;
+        }
+    }
+    .copyinfor {
+        font-size: $font-size;
+        text-align: center;
+        color: #999;
+        @include margin;
+        padding: 20px;
+        strong {
+            font-weight: 400;
+        }
+        a {
+            color: #999;
+            &:hover {
+                color: $color-35;
+            }
+        }
+    }
+}
+
+// 返回顶部
+.top {
+    position: fixed;
+    left: 50%;
+    margin-#{$side-l}: 510px;
+    bottom: 50px;
+    @include width(34px);
+    text-align: center;
+    @include z-index(2000);
+    span {
+        cursor: pointer;
+        &.top2 {
+            display: block;
+            @include background-s(url(../img/gotop.jpg), 0, 0);
+            @include background-size(34px, 103px);
+            @include w-h(34px, 34px);
+            &:hover {
+                @include background-s(url(../img/gotop2.jpg), 0, 0);
+                background-position: 0 0;
+                @include background-size(34px, 103px);
+            }
+        }
+        &.jkapp {
+            position: relative;
+            display: block;
+            @include background('../img/phone.png', #f7f7f7);
+            @include background-size(12px, 24px);
+            @include w-h(34px, 35px);
+            border-bottom: 1px solid #e0e0e0;
+            &:hover {
+                @include background('../img/phone-2.png', #f7f7f7);
+                @include background-size(12px, 24px);
+            }
+        }
+    }
+    a {
+        &.ins {
+            display: block;
+            @include background-s(url(../img/gotop.jpg), 0, -68px);
+            @include background-size(34px, 101px);
+            width: 34px;
+            height: 34px;
+            &:hover {
+                @include background-s(url(../img/gotop2.jpg), 0, -68px);
+                @include background-size(34px, 101px);
+            }
+        }
+        &.qqonline1 {
+            position: relative;
+            display: block;
+            @include background('../img/on1.png', #f7f7f7);
+            @include w-h(34px, 35px);
+            border-bottom: 1px solid #e0e0e0;
+        }
+    }
+}
