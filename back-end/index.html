@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Pinterest后台管理系统</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/boost/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/boost/bootstrap-checkbox.css">
+</head>
+
+<body class="bg1">
+<!-- 首页 -->
+    <div class="home">
+        <div class="homepage">
+        <!-- 顶部用户信息，搜索 -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                           </button>
+                        <a class="navbar-brand" href="#">Pinterest
+                        <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <!-- 搜索框 -->
+                    
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#"><i class="fa fa-refresh"></i> <span class="sr-only">(current)</span></a></li>
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="搜索/Search...">
+                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <i class="fa fa-tasks"></i>
+                                    <span class="badge">2</span></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>
+ 									<span class="badge">5</span>
+                                </a>
+                            </li>
+                            <!-- 用户信息 -->
+                            <li class="dropdown">
+                                <div class="photo"><img src="img/photo.jpg" alt="这是头像" width="45" height="45" /></div>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Angelina
+                                <span class="caret"></span>
+                                </a>
+                               
+                            </li>
+                            <!-- 即时信息 -->
+                            <li class="last"><a href="#"><i class="fa fa-comments"></i>
+ 								
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+               
+            </nav>
+            <!-- 左侧导航栏 -->
+            <div class="leftlist">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active">
+                        <a href="#">
+                            <i class="fa fa-tachometer"></i>首页/Home
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">
+                            <i class="fa fa-pencil"></i>资料/Profile
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">
+                            <i class="fa fa-tint"></i>权限管理/Limits
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">
+                            <i class="fa fa-th-large"></i>消息/Messages
+                            <span class="label label-greensea">Mali</span>
+                            <b class="fa fa-plus dropdown-plus"></b>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">
+                            <i class="fa fa-bar-chart-o"></i>图表/Chart
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">
+                            <i class="fa fa-list"></i>事项/ToDoList
+                            <span class="badge badge-red">5</span>
+                            <b class="fa fa-plus dropdown-plus"></b>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">
+                            <i class="fa fa-th"></i>界面管理/Table
+                        </a>
+                    </li>
+                    <!-- 图标显示 -->
+                    <li class="summary">
+                        <a href="#" class="sidebar-toggle underline">图表统计/Chart <i class="fa fa-angle-up"></i></a>
+                        <div class="media">
+                            <a class="pull-right" href="#">
+                                <span id="sales-chart"><img src="img/2.png" width="69" height="40"></span>
+                            </a>
+                            <div class="media-body">
+                                本周访问量/Week
+                                <h3 class="media-heading">46, 149</h3>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-right" href="#">
+                                <span id="balance-chart"><img src="img/1.png" width="69" height="40"></span>
+                            </a>
+                            <div class="media-body">
+                                历史访问量/History
+                                <h3 class="media-heading">378, 651</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右侧主要信息表格显示 -->
+            <div class="rightform">
+                <div class="row">
+                <!-- 顶部卡片数据显示 -->
+                    <div class="card-container col-lg-3 col-sm-6 col-sm-12">
+                        <div class="card card-redbrown hover">
+                            <div class="front">
+                                <div class="media">
+                                    <span class="pull-left">
+                        <i class="fa fa-users media-object"></i>
+                      </span>
+                                    <div class="media-body">
+                                        <small>新增用户/New Users</small>
+                                        <h2 class="media-heading animate-number" data-value="3659" data-animation-duration="1500">29,653</h2>
+                                    </div>
+                                </div>
+                                <div class="progress-list">
+                                    <div class="details">
+                                        <div class="title">月新增量/This month plan</div>
+                                    </div>
+                                    <div class="status pull-right bg-transparent-black-1">
+                                        <span class="animate-number" data-value="83" data-animation-duration="1500">83</span>%
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="progress progress-little progress-transparent-black">
+                                        <div class="progress-bar animate-progress-bar" data-percentage="83%" style="width: 83%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-3 col-sm-6 col-sm-12">
+                        <div class="card card-blue hover">
+                            <div class="front">
+                                <div class="media">
+                                    <span class="pull-left">
+                        <i class="fa fa-download media-object"></i>
+                      </span>
+                                    <div class="media-body">
+                                        <small>下载量/Download</small>
+                                        <h2 class="media-heading animate-number" data-value="19214" data-animation-duration="1500">19,214</h2>
+                                    </div>
+                                </div>
+                                <div class="progress-list">
+                                    <div class="details">
+                                        <div class="title">月新增量/This month plan </div>
+                                    </div>
+                                    <div class="status pull-right bg-transparent-black-1">
+                                        <span class="animate-number" data-value="100" data-animation-duration="1500">40</span>%
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="progress progress-little progress-transparent-black">
+                                        <div class="progress-bar animate-progress-bar blueone" data-percentage="100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-3 col-sm-6 col-sm-12">
+                        <div class="card card-greensea hover">
+                            <div class="front">
+                                <div class="media">
+                                    <span class="pull-left">
+                        <i class="fa fa-heart media-object"></i>
+                      </span>
+                                    <div class="media-body">
+                                        <small>收藏次数/Like</small>
+                                        <h2 class="media-heading animate-number" data-value="169541" data-animation-duration="1500">169,541</h2>
+                                    </div>
+                                </div>
+                                <div class="progress-list">
+                                    <div class="details">
+                                        <div class="title">月新增量/This month plan</div>
+                                    </div>
+                                    <div class="status pull-right bg-transparent-black-1">
+                                        <span class="animate-number" data-value="42" data-animation-duration="1500">70</span>%
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="progress progress-little progress-transparent-black">
+                                        <div class="progress-bar animate-progress-bar greenone" data-percentage="42%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-3 col-sm-6 col-xs-12">
+                        <div class="card card-slategray hover">
+                            <div class="front">
+                                <div class="media">
+                                    <span class="pull-left">
+                        <i class="fa fa-eye media-object"></i>
+                      </span>
+                                    <div class="media-body">
+                                        <small>访问量/Visits</small>
+                                        <h2 class="media-heading animate-number" data-value="9634" data-animation-duration="1500">9,634</h2>
+                                    </div>
+                                </div>
+                                <div class="progress-list">
+                                    <div class="details">
+                                        <div class="title">月新增量/This month plan</div>
+                                    </div>
+                                    <div class="status pull-right bg-transparent-black-1">
+                                        <span class="animate-number" data-value="25" data-animation-duration="1500">90</span>%
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="progress progress-little progress-transparent-black">
+                                        <div class="progress-bar animate-progress-bar poupleone" data-percentage="25%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主要部分数据显示 -->
+                <div class="inforshow">
+                    <div class="datashow infor">
+                        <div class="row">
+                        <!-- 访问量图表显示 -->
+                            <div class="con-datashow">
+                                <strong>访问量/Visits</strong>
+                                <div class="controls">
+                                    <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="ibox-content">
+                                    <div id="morris-one-line-chart">
+                                        <svg height="342" version="1.1" width="670" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: absolute;">
+                                            <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc>
+                                            <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+                                            <text x="36.5" y="309" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M49,309H1088" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                                            <text x="36.5" y="238" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7.5</tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M49,238H1088" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                                            <text x="36.5" y="167" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15</tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M49,167H1088" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                                            <text x="36.5" y="96" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22.5</tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M49,96H1088" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                                            <text x="36.5" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30</tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M49,25H1088" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                                            <text x="642.6562377786468" y="321.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,6)">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2015</tspan>
+                                            </text>
+                                            <text x="494.34376222135313" y="321.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,6)">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2014</tspan>
+                                            </text>
+                                            <text x="346.03128666405945" y="321.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,6)">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan>
+                                            </text>
+                                            <text x="197.71881110676574" y="321.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,6)">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan>
+                                            </text>
+                                            <text x="49" y="321.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,6)">
+                                                <tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan>
+                                            </text>
+                                            <path fill="none" stroke="#F9271E" d="M49,261.6666666666667C86.17970277669144,249.83333333333334,160.5391083300743,217.88818969448243,197.71881110676574,214.33333333333331C234.79692999608918,210.7881896944824,308.953167774736,247.46666666666664,346.03128666405945,233.26666666666665C383.1094055533829,219.06666666666666,457.2656433320297,100.73333333333332,494.34376222135313,100.73333333333332C531.4218811106765,100.73333333333332,605.5781188893234,223.80863746958636,642.6562377786468,233.26666666666665C716.9140594446617,252.20863746958636,865.4297027766913,209.59784063260338,939.6875244427063,214.33333333333331C976.7656433320296,216.6978406326034,1050.9218811106766,249.83333333333334,1088,261.6666666666667" stroke-width="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                                            <circle cx="49" cy="261.6666666666667" r="5" fill="#F9271E" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="197.71881110676574" cy="214.33333333333331" r="5" fill="#F9271E" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="346.03128666405945" cy="233.26666666666665" r="8" fill="#F9271E" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="494.34376222135313" cy="100.73333333333332" r="5" fill="#F9271E" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="642.6562377786468" cy="233.26666666666665" r="5" fill="#F9271E" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="939.6875244427063" cy="214.33333333333331" r="5" fill="#F9271E" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="1088" cy="261.6666666666667" r="5" fill="#F9271E" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        </svg>
+                                        <div class="morris-hover morris-default-style" style="left: 338.031286664059px; top: 207px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 新增用户统计 -->
+                            <div class="new-userlist infor">
+                                <strong>新增用户/New users</strong>
+                                <div class="controls">
+                                    <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <ul class="progress-list">
+                                    <li>
+                                        <div class="details">
+                                            <div class="title">美国/America</div>
+                                            <div class="description">New users from America</div>
+                                        </div>
+                                        <div class="status pull-right">
+                                            <span class="animate-number" data-value="40" data-animation-duration="1500">40</span>%
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="progress progress-little">
+                                            <div class="progress-bar progress-bar-green animate-progress-bar" data-percentage="40%" style="width: 40%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="details">
+                                            <div class="title">欧洲/Europe</div>
+                                            <div class="description">New users from Europe</div>
+                                        </div>
+                                        <div class="status pull-right">
+                                            <span class="animate-number" data-value="38" data-animation-duration="1000">38</span>%
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="progress progress-little">
+                                            <div class="progress-bar progress-bar-cyan animate-progress-bar" data-percentage="35%" style="width: 35%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="details">
+                                            <div class="title">亚洲/Asia</div>
+                                            <div class="description">New users from Asia</div>
+                                        </div>
+                                        <div class="status pull-right">
+                                            <span class="animate-number" data-value="12" data-animation-duration="800">12</span>%
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="progress progress-little">
+                                            <div class="progress-bar progress-bar-amethyst animate-progress-bar" data-percentage="12%" style="width: 12%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="details">
+                                            <div class="title">非洲/Africa</div>
+                                            <div class="description">New users from Africa</div>
+                                        </div>
+                                        <div class="status pull-right">
+                                            <span class="animate-number" data-value="7" data-animation-duration="600">7</span>%
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="progress progress-little">
+                                            <div class="progress-bar progress-bar-orange animate-progress-bar" data-percentage="7%" style="width: 7%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="details">
+                                            <div class="title">其他地区/Other</div>
+                                        </div>
+                                        <div class="status pull-right">
+                                            <span class="animate-number" data-value="6" data-animation-duration="400">6</span>%
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="progress progress-little">
+                                            <div class="progress-bar progress-bar-red animate-progress-bar" data-percentage="6%" style="width: 6%;"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 用户数据列表 -->
+                    <div class="message infor">
+                        <div class="newmessage">
+                            <strong>数据列表/Data list</strong>
+                            <div class="controls">
+                                <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                                <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <div class="messagetable">
+                                <form>
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>数据</th>
+                                                <th>用户</th>
+                                                <th>值</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><span class="line" style="display: none;">5,3,2,-1,-3,-2,2,3,5,2</span>
+                                                    <svg class="peity" height="16" width="32">
+                                                        <polygon fill="#F9271E" points="0 9.375 0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125 32 9.375"></polygon>
+                                                        <polyline fill="transparent" points="0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125" stroke="#F9271E" stroke-width="1" stroke-linecap="square"></polyline>
+                                                    </svg>
+                                                </td>
+                                                <td>用户1/User one</td>
+                                                <td class="text-navy"> <i class="fa fa-level-up"></i> 40%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><span class="line" style="display: none;">5,3,9,6,5,9,7,3,5,2</span>
+                                                    <svg class="peity" height="16" width="32">
+                                                        <polygon fill="#19B698" points="0 15 0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666 32 15"></polygon>
+                                                        <polyline fill="transparent" points="0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666" stroke="#19B698" stroke-width="1" stroke-linecap="square"></polyline>
+                                                    </svg>
+                                                </td>
+                                                <td>用户2/User two</td>
+                                                <td class="text-warning"> <i class="fa fa-level-down"></i> -20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><span class="line" style="display: none;">1,6,3,9,5,9,5,3,9,6,4</span>
+                                                    <svg class="peity" height="16" width="32">
+                                                        <polygon fill="#F9271E" points="0 15 0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332 32 15"></polygon>
+                                                        <polyline fill="transparent" points="0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332" stroke="#F9271E" stroke-width="1" stroke-linecap="square"></polyline>
+                                                    </svg>
+                                                </td>
+                                                <td>用户3/User three</td>
+                                                <td class="text-navy"> <i class="fa fa-level-up"></i> 26%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 任务列表 -->
+                    <div class="to-do-list infor">
+                        <div class="dolist">
+                            <div class="tile-header color redbrown rounded-top-corners text-center">
+                                <h2>Todo List /</h2>
+                                <h2>任务列表</h2>
+                                <div class="controls">
+                                    <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                            <section class="tile transparent">
+                               
+                                <div class="tile-body color transparent-black rounded-bottom-corners">
+                                    <input type="text" placeholder="添加新任务/Add new todo..." class="w100p bottommargin form-control">
+                                    <ul class="nolisttypes" id="todolist">
+                                        <li>
+                                            <div class="checkbox check-transparent">
+                                                <input type="checkbox" value="1" id="todo-01">
+                                                <label for="todo-01" class="">备份文件/Make a backup</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox check-transparent">
+                                                <input type="checkbox" checked="checked" value="1" id="todo-02">
+                                                <label for="todo-02" class="">发邮件/Send e-mail to Ici</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox check-transparent">
+                                                <input type="checkbox" value="1" id="todo-03">
+                                                <label for="todo-03" class="done">买车票/Buy tickets</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox check-transparent">
+                                                <input type="checkbox" value="1" id="todo-04">
+                                                <label for="todo-04" class="">解决新问题/Resolve issues</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox check-transparent">
+                                                <input type="checkbox" value="1" id="todo-05">
+                                                <label for="todo-05" class="">编写新的界面/Compile new version</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox check-transparent">
+                                                <input type="checkbox" value="1" id="todo-06">
+                                                <label for="todo-06" class="done">上传新界面/Upload new version</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 用户动态 -->
+                    <div class="area infor">
+                        <div class="uaerarea ">
+                            <strong>用户动态/User dynamic</strong>
+                            <div class="controls">
+                                <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                                <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <section class="tile transparent recent-activity">
+                               
+                                <div class="tile-widget color transparent-black rounded-top-corners nopadding">
+                                   
+                                    <ul class="nav nav-tabs tabdrop">
+                                        <li class="dropdown pull-right tabdrop hide"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-th-list"></i> <span class="badge"></span></a>
+                                            <ul class="dropdown-menu"></ul>
+                                        </li>
+                                        <li class="active"><a href="#users-tab" data-toggle="tab">用户/Users</a></li>
+                                        <li class=""><a href="#orders-tab" data-toggle="tab">数据跟踪/Data</a></li>
+                                        <li class=""><a href="#messages-tab" data-toggle="tab">消息/Messages</a></li>
+                                        <li class=""><a href="#tasks-tab" data-toggle="tab">用户状态/States</a></li>
+                                        <li class=""><a href="#comments-tab" data-toggle="tab">联系方式/Comments</a></li>
+                                    </ul>
+                                  
+                                </div>
+                               
+                                <div class="tile-body tab-content nopadding rounded-bottom-corners">
+                                    
+                                    <ul id="users-tab" class="tab-pane fade active in">
+                                        <li>
+                                            <img src="img/peter-avatar.jpg" class="w35" alt="">
+                                            <span class="user font-slab">Peter <strong>Kay</strong></span>
+                                            <span class="subject"> <strong>解禁/unbanned</strong></span>
+                                            <span class="time"><i class="fa fa-clock-o"></i> 15分钟前/ 15 minutes ago</span>
+                                        </li>
+                                        <li>
+                                            <img src="img/random-avatar5.jpg" class="w35" alt="">
+                                            <span class="user font-slab">Arnold <strong>Karlsberg</strong></span>
+                                            <span class="subject"><strong>解禁/unbanned</strong></span>
+                                            <span class="time"><i class="fa fa-clock-o"></i> 1小时前/ 1 hour ago</span>
+                                        </li>
+                                        <li>
+                                            <img src="img/arnold-avatar.jpg" class="w35" alt="">
+                                            <span class="user font-slab">Arnold <strong>Karlsberg</strong></span>
+                                            <span class="subject"><strong>禁止/banned</strong></span>
+                                            <span class="time"><i class="fa fa-clock-o"></i> 2小时前/ 2 hours ago</span>
+                                        </li>
+                                        <li>
+                                            <img src="img/ici-avatar.jpg" class="w35" alt="">
+                                            <span class="user font-slab">Ing. Imrich <strong>Kamarel</strong></span>
+                                            <span class="subject"> <strong>更新/updated</strong></span>
+                                            <span class="time"><i class="fa fa-clock-o"></i> 4小时前/ 4 hours ago</span>
+                                        </li>
+                                        <li>
+                                            <img src="img/profile-photo.jpg" class="w35" alt="">
+                                            <span class="user font-slab">Arnold <strong>Karlsberg</strong></span>
+                                            <span class="subject"><strong>注册/registered</strong></span>
+                                            <span class="time"><i class="fa fa-clock-o"></i> 8小时前/ 8 hours ago</span>
+                                        </li>
+                                        <li>
+                                            <img src="img/peter-avatar.jpg" class="w35" alt="">
+                                            <span class="user font-slab">Peter <strong>Kay</strong></span>
+                                            <span class="subject"><strong>禁止/banned</strong></span>
+                                            <span class="time"><i class="fa fa-clock-o"></i> 12小时前/ 12 hours ago</span>
+                                        </li>
+                                        <li>
+                                            <img src="img/george-avatar.jpg" class="w35" alt="">
+                                            <span class="user font-slab">Peter <strong>Kay</strong></span>
+                                            <span class="subject"><strong>注册/registered</strong></span>
+                                            <span class="time"><i class="fa fa-clock-o"></i> 昨天/ yesterday</span>
+                                        </li>
+                                    </ul>
+                                    
+                                   
+                                </div>
+                               
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 尾部信息 -->
+            <div class="footer">
+                <div>
+                    <strong>Copyright</strong> Pinterest © 2015
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- 图表js引用 -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+</body>
+
+</html>
