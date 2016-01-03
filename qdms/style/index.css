@@ -1,0 +1,64 @@
+html, body, div, p, span {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif; }
+
+.container {
+  min-width: 850px;
+  height: 100%; }
+  .container .row {
+    margin-right: -15px;
+    margin-left: -15px; }
+  .container .ibox {
+    border: 1px solid #e7eaec; }
+    .container .ibox .ibox-title {
+      min-height: 48px;
+      background-color: #fff;
+      margin-bottom: 0;
+      padding: 14px 15px 7px; }
+      .container .ibox .ibox-title h2 {
+        display: inline-block;
+        font-size: 35px;
+        margin: 0 0 7px;
+        padding: 0;
+        float: left; }
+  .container .ibox-content {
+    clear: both;
+    background-color: #fff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-style: solid solid none;
+    border-width: 1px 0px; }
+    .container .ibox-content th {
+      text-align: center;
+      font-size: 16px;
+      border-bottom: 3px solid #0AA699; }
+    .container .ibox-content .title {
+      width: 270px;
+      border-right: 1px solid #ccc; }
+    .container .ibox-content p {
+      text-indent: 2em;
+      line-height: 30px; }
+  .container .img {
+    min-width: 850px; }
+
+.top {
+  position: fixed;
+  left: 55%;
+  margin-left: 510px;
+  bottom: 50px;
+  display: none;
+  color: #999;
+  width: 35px;
+  height: 35px;
+  font-size: 12px;
+  background: #ccc;
+  text-align: center;
+  z-index: 2000; }
+  .top:hover a {
+    text-decoration: none; }
+
+/*# sourceMappingURL=index.css.map */

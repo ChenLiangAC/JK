@@ -1,0 +1,101 @@
+    //sass style
+    //-----------------------------------
+    // index.scss
+    @import 'reset';
+    $color-w:#fff;
+    $color-e7:#e7eaec;
+    $color-c:#ccc;
+    $color-9:#999;
+    $color-0a:#0AA699;
+    $side-l: left;
+    $side-t: top;
+    $side-b: bottom;
+    $side-r: right;
+    @mixin width {
+        min-width: 850px;
+        height: 100%;
+    }
+    
+    @mixin width-top {
+        width: 35px;
+        height: 35px;
+    }
+    
+    @mixin border($color) {
+        border: 1px solid $color;
+    }
+    
+    @mixin margin {
+        margin-#{$side-r}: -15px;
+        margin-#{$side-l}: -15px;
+    }
+    
+    .container {
+        @include width;
+        .row {
+            @include margin;
+        }
+        .ibox {
+            @include border($color-e7);
+            .ibox-title {
+                min-height: 48px;
+                background-color: $color-w;
+                margin-#{$side-b}: 0;
+                padding: 14px 15px 7px;
+                h2 {
+                    display: inline-block;
+                    font-size: 35px;
+                    margin: 0 0 7px;
+                    padding: 0;
+                    float: $side-l;
+                }
+            }
+        }
+        .ibox-content {
+            clear: both;
+            background-color: $color-w;
+            color: inherit;
+            padding: 15px 20px 20px 20px;
+            border-color: $color-e7;
+            border-style: solid solid none;
+            border-width: 1px 0px;
+            th {
+                text-align: center;
+                font-size: 16px;
+                border-#{$side-b}: 3px solid $color-0a;
+            }
+            .title {
+                width: 270px;
+                border-#{$side-r}: 1px solid $color-c;
+            }
+            p {
+                text-indent: 2em;
+                line-height: 30px;
+            }
+        }
+        .img{
+        	min-width: 850px;
+        	margin:0 auto;
+        	
+        }
+    }
+    
+    .top {
+        position: fixed;
+        left: 55%;
+        margin-#{$side-l}: 510px;
+        bottom: 50px;
+        display: none;
+        color: #999;
+        @include width-top;
+        font-size: 12px;
+        background: $color-c;
+        text-align: center;
+        z-index: 2000;
+       
+        &:hover {
+            a {
+                text-decoration: none;
+            }
+        }
+    }

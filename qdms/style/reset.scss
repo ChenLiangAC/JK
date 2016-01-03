@@ -1,0 +1,15 @@
+//sass style
+//-----------------------------------
+// reset.scss
+$fontSize:14px;
+$fontStack:Helvetica, sans-serif;
+
+html,body,div,p,span {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: $fontSize;
+    font-family: $fontStack;
+    
+}
+
