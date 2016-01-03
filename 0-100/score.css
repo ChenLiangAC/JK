@@ -1,0 +1,10 @@
+body,input,button,div{
+	margin: 0;
+	padding: 0;
+
+}
+/*输入框*/
+.inter{
+	width: 400px;
+	margin: 120px auto;
+}
