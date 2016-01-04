@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 860px;
+    height: 100%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*主要内容区*/
+
+.main {
+    height: 600px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/*左边内容*/
+
+.left {
+    width: 300px;
+    background: #ffffff;
+    float: left;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.pic1 {
+    width: 280px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.pic1 img {
+    width: 280px;
+    height: 400px;
+}
+
+.pic2 {
+    width: 280px;
+    height: 180px;
+    margin: 60px auto;
+}
+
+.pic2 img {
+    width: 280px;
+    height: 180px;
+}
+
+
+/*右边内容*/
+
+.right {
+    width: 300px;
+    float: left;
+    background: #ffffff;
+    margin-left: -300px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*中间内容*/
+
+.middle {
+    width: 100%;
+    background: #ffffff;
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.middle .pic4 {
+    width: 280px;
+    height: 350px;
+    margin: 10px auto;
+}
+
+.middle .pic4 img {
+    width: 280px;
+    height: 400px;
+}
+
+.middle .pic3 {
+    width: 280px;
+    height: 180px;
+    margin: 0px auto;
+}
+
+.middle .pic3 img {
+    width: 280px;
+    height: 180px;
+}
+
+.middle .inner {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+/*头部*/
+
+.header {
+    height: 100px;
+    background: #ffffff;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.header .text1 {
+    height: 60px;
+    margin-top: 20px;
+}
+
+.line {
+    width: 120px;
+    height: 2px;
+    background: #ccc;
+    margin: 0 auto;
+}
+/*尾部*/
+.footer {
+    height: 80px;
+    background: #ffffff;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.footer .text2 {
+    height: 60px;
+    margin-top: 40px;
+}
