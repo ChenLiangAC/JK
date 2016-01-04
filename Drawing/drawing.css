@@ -1,0 +1,1044 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 99px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url(img/bj1.jpg) no-repeat;
+}
+
+.all {
+    height: 100%;
+    width: 1160px;
+    margin: -99px auto;
+}
+
+
+/*图标动态*/
+
+#icon {
+    height: 205px;
+    float: left;
+    position: relative;
+    z-index: 1;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition-delay: .1s;
+    -webkit-transform: rotate(360deg);
+    -webkit-animation: animationsicon 2s ease-out;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#icon:hover {
+    -webkit-transform: rotate(-360deg);
+}
+
+@-webkit-keyframes animationsicon {
+    0% {
+        -webkit-transform: rotate(0deg);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: rotate(45deg);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: rotate(90deg);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: rotate(135deg);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: rotate(225deg);
+        opacity: 1;
+    }
+    70% {
+        -webkit-transform: rotate(270deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: rotate(315deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+
+/*第一列*/
+
+.part1 {
+    -webkit-transform: translate(0, 300px);
+    -webkit-animation: animations1 2s ease-out;
+    transform: translate(0, 300px);
+}
+
+@-webkit-keyframes animations1 {
+    0% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: translate(0, 50px);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: translate(0, 100px);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translate(0, 150px);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: translate(0, 200px);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translate(0, 250px);
+        opacity: 1;
+    }
+    70% {
+        -webkit-transform: translate(0, 300px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 350px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 300px);
+        opacity: 1;
+    }
+}
+
+
+/*第二列*/
+
+.part2 {
+    -webkit-transform: translate(0, 400px);
+    -webkit-animation: animations2 2s ease-out;
+    transform: translate(0, 400px);
+}
+
+@-webkit-keyframes animations2 {
+    0% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: translate(0, 62.5px);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: translate(0, 125px);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translate(0, 187.5px);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: translate(0, 250px);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translate(0, 312.5px);
+        opacity: 1;
+    }
+    70% {
+        -webkit-transform: translate(0, 375px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 437.5px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 400px);
+        opacity: 1;
+    }
+}
+
+
+/*第三列*/
+
+.part3 {
+    -webkit-transform: translate(0, 500px);
+    -webkit-animation: animations3 2s ease-out;
+    transform: translate(0, 500px);
+}
+
+@-webkit-keyframes animations3 {
+    0% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: translate(0, 75px);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: translate(0, 150px);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translate(0, 225px);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: translate(0, 300px);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translate(0, 375px);
+        opacity: 1;
+    }
+    70% {
+        -webkit-transform: translate(0, 450px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 525px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 500px);
+        opacity: 1;
+    }
+}
+
+
+/*第四列*/
+
+.part4 {
+    -webkit-transform: translate(0, 500px);
+    -webkit-animation: animations4 2s ease-out;
+    transform: translate(0, 500px);
+}
+
+@-webkit-keyframes animations4 {
+    0% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: translate(0, 75px);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: translate(0, 150px);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translate(0, 225px);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: translate(0, 300px);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translate(0, 375px);
+        opacity: 1;
+    }
+    70% {
+        -webkit-transform: translate(0, 450px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 525px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 500px);
+        opacity: 1;
+    }
+}
+
+
+/*第五列*/
+
+.part5 {
+    -webkit-transform: translate(0, 400px);
+    -webkit-animation: animations5 2s ease-out;
+    transform: translate(0, 400px);
+}
+
+@-webkit-keyframes animations5 {
+    0% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: translate(0, 62.5px);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: translate(0, 125px);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translate(0, 187.5px);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: translate(0, 250px);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translate(0, 312.5px);
+        opacity: 1;
+    }
+    70% {
+        -webkit-transform: translate(0, 375px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 437.5px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 400px);
+        opacity: 1;
+    }
+}
+
+
+/*第六列*/
+
+.part6 {
+    -webkit-transform: translate(0, 300px);
+    -webkit-animation: animations6 2s ease-out;
+    transform: translate(0, 300px);
+}
+
+@-webkit-keyframes animations6 {
+    0% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: translate(0, 50px);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: translate(0, 100px);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translate(0, 150px);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: translate(0, 200px);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translate(0, 250px);
+        opacity: 1;
+    }
+    70% {
+        -webkit-transform: translate(0, 300px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 350px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 300px);
+        opacity: 1;
+    }
+}
+
+
+/*文字动态*/
+
+.text1 {
+    text-align: center;
+    font-size: 66px;
+    -webkit-animation: animations7 3s ease-in-out 2s;
+    -moz-animation: animations7 3s ease-in-out 2s;
+    -o-animation: animations7 3s ease-in-out 2s;
+    -ms-animation: animations7 3s ease-in-out 2s;
+    animation: animations7 3s ease-in-out 2s;
+}
+
+@-webkit-keyframes animations7 {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: .8;
+    }
+    45% {
+        opacity: .3;
+    }
+    50% {
+        opacity: .8;
+    }
+    55% {
+        opacity: .3;
+    }
+    60% {
+        opacity: .8;
+    }
+    100% {
+        opacity: .9;
+    }
+}
+
+.text1 {
+    width: 300px;
+    text-align: center;
+    line-height: 70px;
+    position: relative;
+    top: 500px;
+    left: 40%;
+}
+
+p {
+    opacity: 0;
+    display: block;
+    height: 200px;
+    color: #000;
+    word-spacing: 8px;
+    letter-spacing: 5px;
+    font: bold 14px/50px Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+}
+
+
+/*line彩条*/
+
+#line {
+    width: 190px;
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+    position: absolute;
+    z-index: 0;
+    transform: translate(0, -899px);
+}
+
+.line1 {
+    background: #121945;
+}
+
+.line2 {
+    margin-left: 190px;
+    background: #272623;
+}
+
+.line3 {
+    margin-left: 380px;
+    background: #E0B52B;
+}
+
+.line4 {
+    margin-left: 570px;
+    background: #4B802E;
+}
+
+.line5 {
+    margin-left: 760px;
+    background: #611F4C;
+}
+
+.line6 {
+    margin-left: 950px;
+    background: #7E1D14;
+}
+
+
+/*icon绘制*/
+
+#cricle {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+
+/*icon1 美队*/
+
+.all .cricle1 {
+    background: #C11517;
+   
+}
+
+.all .cricle1 .cricle2 {
+    width: 160px;
+    height: 160px;
+    background: #ECE8DD;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    margin: 0 auto;
+}
+
+.all .cricle1 .cricle2 .cricle3 {
+    width: 130px;
+    height: 130px;
+    background: #C11517;
+    border-radius: 50%;
+    margin: 0px auto;
+    position: relative;
+    top: 15px;
+}
+
+.all .cricle1 .cricle2 .cricle3 .cricle4 {
+    width: 100px;
+    height: 100px;
+    background: #121945;
+    border-radius: 50%;
+    margin: 0px auto;
+    position: relative;
+    top: 15px;
+}
+
+
+/*五角星*/
+
+#star-five {
+    position: relative;
+    top: 28px;
+    left: 5px;
+    display: block;
+    color: #ECE8DD;
+    width: 0px;
+    height: 0px;
+    border-right: 46px solid transparent;
+    border-bottom: 37px solid #ECE8DD;
+    border-left: 49px solid transparent;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+}
+
+#star-five:before {
+    border-bottom: 49px solid #ECE8DD;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -23px;
+    left: -38px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+
+#star-five:after {
+    position: absolute;
+    display: block;
+    color: #ECE8DD;
+    top: 2px;
+    left: -54px;
+    width: 0px;
+    height: 0px;
+    border-right: 47px solid transparent;
+    border-bottom: 37px solid #ECE8DD;
+    border-left: 47px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+    content: '';
+}
+
+
+/*icon2 黑寡妇*/
+
+.all .cricle5 {
+    background: #221B11;
+  
+}
+
+.all .cricle6 {
+    width: 160px;
+    height: 160px;
+    background: #312C19;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    margin: 0 auto;
+}
+
+.all .cricle6 .alt-J1 {
+    width: 25px;
+    height: 0px;
+    border-top: 50px solid #D12026;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #D12026;
+    position: relative;
+    border-radius: 10px;
+    top: 29px;
+    margin: 0 auto;
+}
+
+
+/*icon3 雷神*/
+
+.all .cricle7 {
+    background: #011031;
+
+}
+
+.all .cricle8 {
+    width: 170px;
+    height: 170px;
+    background: #C7CCB8;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+}
+
+.all .cricle9 {
+    width: 160px;
+    height: 160px;
+    background: #15355B;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+
+.all .cricle9 .squre1 {
+    width: 90px;
+    height: 60px;
+    background: #999;
+    border-radius: 2px;
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+}
+
+.all .cricle9 .squre1 .trapezoid1 {
+    border-bottom: 10px solid #ccc;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    height: 0;
+    width: 44px;
+    position: relative;
+    top: 25px;
+    left: -34px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.all .cricle9 .squre1 .trapezoid2 {
+    border-bottom: 10px solid #ccc;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    height: 0;
+    width: 44px;
+    position: relative;
+    top: 15px;
+    left: 64px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.all .cricle9 .squre2 {
+    width: 13px;
+    height: 70px;
+    background: #3E2415;
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+}
+
+.all .cricle9 .squre2 .squre3 {
+    width: 13px;
+    height: 7px;
+    background: #201209;
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+}
+
+.all .cricle9 .squre2 .squre4 {
+    width: 13px;
+    height: 1px;
+    background: #201209;
+    position: relative;
+    top: 10px;
+    margin: 0px auto;
+}
+
+.all .cricle9 .squre2 .squre5 {
+    width: 13px;
+    height: 1px;
+    background: #201209;
+    position: relative;
+    top: 20px;
+    margin: 0px auto;
+}
+
+.all .cricle9 .squre2 .squre6 {
+    width: 13px;
+    height: 1px;
+    background: #201209;
+    position: relative;
+    top: 30px;
+    margin: 0px auto;
+}
+
+.all .cricle9 .squre2 .squre7 {
+    width: 13px;
+    height: 3px;
+    background: #ccc;
+    position: relative;
+    top: 40px;
+    margin: 0px auto;
+}
+
+
+/*icon4 绿巨人*/
+
+.all .cricle10 {
+    background: #000;
+   
+}
+
+.all .cricle11 {
+    width: 180px;
+    height: 180px;
+    background: #4B802E;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+
+.all .cricle11 .fan-shaped1 {
+    width: 0px;
+    height: 0px;
+    border-radius: 68px;
+    border: 68px solid transparent;
+    border-top-color: #000;
+    position: relative;
+    top: -4px;
+    left: 22px;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+.all .cricle11 .fan-shaped2 {
+    width: 0px;
+    height: 0px;
+    border-radius: 68px;
+    border: 68px solid transparent;
+    border-top-color: #000;
+    position: relative;
+    top: -148px;
+    left: 25px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
+
+.all .cricle11 .fan-shaped3 {
+    width: 0px;
+    height: 0px;
+    border-radius: 68px;
+    border: 68px solid transparent;
+    border-top-color: #000;
+    position: relative;
+    top: -283px;
+    left: 18px;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+}
+
+.all .cricle11 .cricle12 {
+    width: 30px;
+    height: 30px;
+    border: 10px solid #4B802E;
+    background: #000;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    position: absolute;
+    left: 65px;
+    top: 65px;
+    margin: 0 auto;
+}
+
+.all .cricle11 .fan {
+    position: relative;
+    top: 31px;
+    left: 1px;
+    margin: 0 auto;
+}
+
+
+/*icon5 鹰眼*/
+
+.all .cricle13 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+    border: 15px solid #743560;
+    background: #C9AD7D;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.all .cricle14 {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 30px;
+    margin: 0 auto;
+    border: 15px solid #743560;
+    background: #C9AD7D;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.all .cricle15 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 23px;
+    margin: 0 auto;
+    background: #743560;
+    border-radius: 100px;
+}
+
+.all .cricle16 {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+    border: 5px solid #000;
+    background: #C9AD7D;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+
+
+/*icon6 钢铁侠*/
+
+.allicons {
+    width: 185px;
+    height: 185px;
+    position: relative;
+    top: -5px;
+    left: -4px;
+    margin: 0 auto;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.all .cricle17 {
+    border-bottom: 26px solid #12D0BB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 39px;
+    border-radius: 5px;
+    position: relative;
+    top: 16px;
+    left: 66px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.all .cricle18 {
+    border-bottom: 26px solid #12D0BB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 39px;
+    border-radius: 5px;
+    position: relative;
+    top: 121px;
+    left: 66px;
+}
+
+.all .cricle19 {
+    border-bottom: 26px solid #12D0BB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 39px;
+    border-radius: 5px;
+    position: relative;
+    top: 28px;
+    left: 0px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.all .cricle20 {
+    border-bottom: 26px solid #12D0BB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 39px;
+    border-radius: 5px;
+    position: relative;
+    top: 0px;
+    left: 130px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.all .cricle21 {
+    border-bottom: 26px solid #12D0BB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 30px;
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
+    left: 21px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.all .cricle22 {
+    border-bottom: 26px solid #12D0BB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 30px;
+    border-radius: 5px;
+    position: relative;
+    top: -2px;
+    left: 120px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.all .cricle23 {
+    border-bottom: 26px solid #12D0BB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 30px;
+    border-radius: 5px;
+    position: relative;
+    top: -122px;
+    left: 22px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+
+.all .cricle24 {
+    border-bottom: 26px solid #12D0BB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 30px;
+    border-radius: 5px;
+    position: relative;
+    top: -149px;
+    left: 118px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+}
+
+.all .alt-J2 {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -150px;
+    left: 3px;
+    margin: 0 auto;
+    border: 2px solid #1780C7;
+    background: #35F1DC;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.all .alt-J3 {
+    width: 66px;
+    height: 66px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+    border: 2px solid #0E456B;
+    background: #35F1DC;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.all .alt-J4 {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+    border: 3px solid #ECF7FF;
+    background: #73F9EA;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px
+}
