@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>CSS下拉菜单演示</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+    body {
+        font-family: arial, 宋体, serif;
+        font-size: 12px;
+    }
+    
+    #nav2 {
+        height: 100%;
+        line-height: 24px;
+        list-style-type: none;
+        
+    }
+    
+    #nav2 a {
+        display: block;
+        width: 80px;
+        text-align: center;
+    }
+    
+ 
+    
+
+    
+    #nav2 a:hover {
+        color: #666;
+        
+    }
+    
+    #nav2 li {
+        float: left;
+        width: 80px;
+    }
+    
+  
+    
+    #nav2 li ul {
+        line-height: 27px;
+        list-style-type: none;
+        box-shadow: 1px 1px 1px #ccc;
+        text-align: left;
+       /* left: -999em;*/
+        width: 80px;
+        position: absolute;
+    }
+    
+    #nav2 li ul li {
+        float: left;
+        width: 80px;
+        height: 80px;
+        background: #F6F6F6;
+    }
+    
+    #nav2 li ul a {
+        display: block;
+        width: 80px;
+
+        text-align: center;
+    }
+    
+
+    
+  
+  
+    #nav2 li:hover ul {
+        left: auto;
+    }
+    
+    #nav2 li.sfhover ul {
+        left: auto;
+    }
+    
+    #content {
+        clear: left;
+    }
+    
+    .table2 a {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        width: 66px;
+        height: 76px;
+        margin: 0px auto;
+        border-bottom: 1px solid #F0F0F0;
+        color: #666;
+        overflow: hidden;
+    }
+    
+    #nav2 .table2 a span.icon1 {
+        background: url(img/1.png ) no-repeat;
+    }
+    
+    #nav2 .table2 a span.icon2 {
+        background: url(img/2.png ) no-repeat;
+    }
+    
+    .table2 a span.icon3 {
+        width: 40px;
+        background: url(img/3.png ) no-repeat;
+    }
+    
+    .table2 a span.icon4 {
+        background: url(img/4.png ) no-repeat;
+    }
+    
+    .table2 a span.icon5 {
+        background: url(img/5.png ) no-repeat;
+    }
+    
+    .table2 a span.icon6 {
+        background: url(img/6.png ) no-repeat;
+    }
+    
+    .table2 a span.icon7 {
+        background: url(img/7.png ) no-repeat;
+    }
+    
+    .table2 a span {
+        width: 39px;
+        height: 39px;
+        display: block;
+        margin: 10px auto 5px;
+    }
+    
+    .table2 a:hover {
+        color: #666;
+        text-decoration: underline;
+    }
+    
+    .table3 {
+        margin-top: 15px;
+        height: 30px;
+        width: 85px;
+        overflow: hidden;
+    }
+    
+    .table3 a:link {
+        color: #666;
+        text-decoration: underline;
+    }
+    
+    .table3 a:visited {
+        color: #666;
+        text-decoration: underline;
+    }
+    </style>
+    <script type=text/javascript>
+    <!--//--><![CDATA[//><!-- 
+    function menuFix() {
+        var sfEls = document.getElementById("nav2").getElementsByTagName("li");
+        for (var i = 0; i < sfEls.length; i++) {
+            sfEls[i].onmouseover = function() {
+                this.className += (this.className.length > 0 ? " " : "") + "sfhover";
+            }
+            sfEls[i].onMouseDown = function() {
+                this.className += (this.className.length > 0 ? " " : "") + "sfhover";
+            }
+            sfEls[i].onMouseUp = function() {
+                this.className += (this.className.length > 0 ? " " : "") + "sfhover";
+            }
+            sfEls[i].onmouseout = function() {
+                this.className = this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+                    "");
+            }
+        }
+    }
+    window.onload = menuFix;
+    //--><!]]>
+    </script>
+</head>
+
+<body>
+    <ul id="nav2">
+        <li><a href="#">更多产品</a>
+            <ul class="table2">
+                <li><a href="http://www.nuomi.com/?cid=002540"><span class="icon1"></span>糯米</a></li>
+                <li><a href="http://zhidao.baidu.com/"><span class="icon2"></span>知道</a></li>
+                <li><a href="http://music.baidu.com/"><span class="icon3"></span>音乐</a></li>
+                <li><a href="http://image.baidu.com/"><span class="icon4"></span>图片</a></li>
+                <li><a href="http://wenku.baidu.com/"><span class="icon5"></span>文库</a></li>
+                <li><a href="http://top.baidu.com/"><span class="icon6"></span>风云榜</a></li>
+                <li><a href="http://e.baidu.com/?refer=888"><span class="icon7"></span>百度推广</a></li>
+                <li class="table3">
+                    <a href="https://www.baidu.com/more/">全部产品>></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
