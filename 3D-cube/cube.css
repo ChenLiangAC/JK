@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: #314d5c;
+}
+/*文字效果*/
+.text{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+	text-shadow: -1px 3px 4px #006;
+}
+.text p{
+	display: inline-block;
+
+}
+  
+.color1:hover  
+ {  
+    color: #426ADD;  
+    text-decoration: none;  
+}  
+  
+.color2:hover  
+ {  
+    color: #F22127;  
+    text-decoration: none;  
+} 
+  
+.color3:hover 
+ {  
+    color: #FFC129;  
+    text-decoration: none;  
+}
+  
+.color4:hover {  
+    color: #07AB18;  
+    text-decoration: none;  
+}
+/* 魔方效果 */
+
+.mycube {
+    height: 450px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 0px;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform: rotatex(-90deg);
+    -moz-perspective: 0px;
+    -webkit-animation: mycube 5s ease infinite;
+    -moz-animation: mycube 5s ease infinite;
+}
+
+
+.box div div {
+    width: 36px;
+    height: 36px;
+    float: left;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+/*方块颜色*/
+.p3,.p8,.p12,.p18,.p14,.p15,.p11,.p23 {
+
+    background: #fff;
+}
+.p2,.p9,.p17,.p5,.p21,.p13,.p6 {
+    
+    background: #426ADD;
+}
+
+.p1,.p19,.p7,.p25,.p22,.p10 {
+    background: #F22127;
+}
+
+.p4,.p16,.p24,.p20 {
+    background: #FFC129;
+}
+
+.p18,.p8,.p12,.p14 {
+
+    background: #fff;
+}
+
+.box5 .p4,.p16,.p24,.p20 {
+
+    background: #FFC129;
+}
+
+.p2,.p5,.p21,.p13,.p6 {
+   
+    background: #426ADD;
+}
+
+
+.p1,.p25,.p22,.p10 {
+    
+    background: #F22127;
+}
+
+.p3,.p23,.p11,.p15,.p19,.p9,.p7,.p17 {
+    
+    background: #07AB18;
+}
+
+/*魔方各面*/
+.box {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    margin: -100px 0 0 -100px;
+    
+}
+/*第一面*/
+.box1 {
+    -webkit-transform: rotatey(90deg) translatez(-100px);
+    -moz-transform: rotatey(90deg) translatez(-100px);
+   
+}
+/*第二面*/
+.box2 {
+    -webkit-transform: rotatey(90deg) translatez(100px);
+    -moz-transform: rotatey(90deg) translatez(100px);
+   
+}
+/*第三面*/
+.box3 {
+    -webkit-transform: rotatex(90deg) translatez(100px);
+    -moz-transform: rotatex(90deg) translatez(100px);
+    
+}
+/*第四面*/
+.box4 {
+    -webkit-transform: rotatex(90deg) translatez(-100px);
+    -moz-transform: rotatex(90deg) translatez(-100px);
+    
+}
+/*第五面*/
+.box5 {
+    -webkit-transform: translatez(-100px);
+    -moz-transform: translatez(-100px);
+    
+}
+/*第六面*/
+.box6 {
+    -webkit-transform: translatez(100px);
+    -moz-transform: translatez(100px);
+    
+}
+/*动画开始*/
+@-webkit-keyframes mycube {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform-origin: center center;
+    }
+    25% {
+        -webkit-transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+        -webkit-transform-origin: center center;
+    }
+    50% {
+        -webkit-transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg);
+        -webkit-transform-origin: center center;
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        -webkit-transform-origin: center center;
+    }
+}
+
+@-moz-keyframes mycube {
+    0% {
+        -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        -moz-transform-origin: center center;
+    }
+        25% {
+        -moz-transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+        -moz-transform-origin: center center;
+    }
+    50% {
+        -moz-transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg);
+        -moz-transform-origin: center center;
+    }
+    100% {
+        -moz-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        -moz-transform-origin: center center;
+    }
+}
+
+
+/* 动画结束 */
+
+
