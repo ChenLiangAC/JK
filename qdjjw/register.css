@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    background: url(image/beijing.gif);
+    color: #000;
+}
+
+td {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #333;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.titleinfo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #00f;
+}
+
+.bluetext {
+    color: #00f;
+}
+
+.link {
+    color: #0000cc;
+    font-size: 12px;
+    text-decoration: underline;
+}
