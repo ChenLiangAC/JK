@@ -1,0 +1,256 @@
+{
+  "ID": "a11d9152-8d92-4dbd-9c55-8e5df69de430",
+  "Version": "2.3.3.0",
+  "Name": "Loading",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [
+          {
+            "ActionTag": 434432216,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 0.339,
+                "Y": 0.1861,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 434432216,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 319,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ScensImg/LoadingScene.png",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 1136,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 321.7827,
+              "Y": 567.8292
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5028,
+              "Y": 0.4998
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": 1.7827,
+            "RightMargin": -1.7827,
+            "TopMargin": 0.1708,
+            "BottomMargin": -0.1708,
+            "Tag": 325,
+            "ActionTag": 1327613095,
+            "Size": {
+              "X": 640.0,
+              "Y": 1136.0
+            },
+            "Name": "Image_2",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "IconItems/bgload.png",
+              "Plist": ""
+            },
+            "Scale9Width": 2264,
+            "Scale9Height": 142,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 324.2971,
+              "Y": 500.6575
+            },
+            "Scale": {
+              "ScaleX": 0.196,
+              "ScaleY": 0.1913
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5067,
+              "Y": 0.4407
+            },
+            "PreSize": {
+              "X": 3.5375,
+              "Y": 0.125
+            },
+            "LeftMargin": -807.7029,
+            "RightMargin": -816.2971,
+            "TopMargin": 564.3425,
+            "BottomMargin": 429.6575,
+            "CallBackType": "Touch",
+            "Tag": 331,
+            "ActionTag": 132725661,
+            "Size": {
+              "X": 2264.0,
+              "Y": 142.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "ProgressInfo": 77,
+            "ImageFileData": {
+              "Type": "Normal",
+              "Path": "IconItems/load-11.png",
+              "Plist": ""
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 324.2971,
+              "Y": 500.6575
+            },
+            "Scale": {
+              "ScaleX": 0.339,
+              "ScaleY": 0.1861
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5067,
+              "Y": 0.4407
+            },
+            "PreSize": {
+              "X": 1.9969,
+              "Y": 0.0792
+            },
+            "LeftMargin": -314.7029,
+            "RightMargin": -323.2971,
+            "TopMargin": 590.3425,
+            "BottomMargin": 455.6575,
+            "Tag": 330,
+            "ActionTag": 434432216,
+            "Size": {
+              "X": 1278.0,
+              "Y": 90.0
+            },
+            "Name": "LoadingBar_1",
+            "ctype": "LoadingBarObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 24,
+            "LabelText": "LOADING...",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "IconItems/70214__.TTF",
+              "Plist": ""
+            },
+            "TouchScaleChangeAble": true,
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 322.176,
+              "Y": 548.4375
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5034,
+              "Y": 0.4828
+            },
+            "PreSize": {
+              "X": 0.1875,
+              "Y": 0.0211
+            },
+            "LeftMargin": 262.176,
+            "RightMargin": 257.824,
+            "TopMargin": 575.5625,
+            "BottomMargin": 536.4375,
+            "Tag": 335,
+            "ActionTag": 826920369,
+            "Size": {
+              "X": 120.0,
+              "Y": 24.0
+            },
+            "Name": "Text_2",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "IconItems/70214__.TTF",
+        "IconItems/bgload.png",
+        "IconItems/load-11.png",
+        "ScensImg/LoadingScene.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

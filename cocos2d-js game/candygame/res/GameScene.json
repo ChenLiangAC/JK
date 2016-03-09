@@ -1,0 +1,780 @@
+{
+  "ID": "3470036f-0056-4bc3-b0a8-01f1e9ca9933",
+  "Version": "2.3.3.0",
+  "Name": "GameScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 347,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ScensImg/GameScene.png",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 1136,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 319.8168,
+              "Y": 567.5735
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4997,
+              "Y": 0.4996
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": -0.1832,
+            "RightMargin": 0.1832,
+            "TopMargin": 0.4265,
+            "BottomMargin": -0.4265,
+            "Tag": 348,
+            "ActionTag": 1247201152,
+            "Size": {
+              "X": 640.0,
+              "Y": 1136.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "Button/btn2-01.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "Button/btn1-01.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 304,
+            "Scale9Height": 171,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 576.7657,
+              "Y": 573.8327
+            },
+            "Scale": {
+              "ScaleX": 0.3015,
+              "ScaleY": 0.3015
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9012,
+              "Y": 0.5051
+            },
+            "PreSize": {
+              "X": 0.5219,
+              "Y": 0.1699
+            },
+            "LeftMargin": 409.7577,
+            "RightMargin": -103.7737,
+            "TopMargin": 465.6641,
+            "BottomMargin": 477.3295,
+            "Tag": 9,
+            "ActionTag": -120625363,
+            "Size": {
+              "X": 334.016,
+              "Y": 193.0064
+            },
+            "Name": "Button_backtostart",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "Button/btn2-01.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "Button/btn1-01.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 304,
+            "Scale9Height": 171,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 58.4481,
+              "Y": 573.875
+            },
+            "Scale": {
+              "ScaleX": 0.3015,
+              "ScaleY": 0.3015
+            },
+            "RotationSkewX": 180.0,
+            "RotationSkewY": 180.0,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0913,
+              "Y": 0.5052
+            },
+            "PreSize": {
+              "X": 0.5219,
+              "Y": 0.1699
+            },
+            "LeftMargin": -108.5599,
+            "RightMargin": 414.5439,
+            "TopMargin": 465.6218,
+            "BottomMargin": 477.3718,
+            "Tag": 12,
+            "ActionTag": -309756858,
+            "Size": {
+              "X": 334.016,
+              "Y": 193.0064
+            },
+            "Name": "Button_backtostart_0",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "IconItems/packpump-11.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 318.7713,
+              "Y": 189.5932
+            },
+            "Scale": {
+              "ScaleX": 0.1513,
+              "ScaleY": 0.1513
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4981,
+              "Y": 0.1669
+            },
+            "PreSize": {
+              "X": 1.5281,
+              "Y": 1.0898
+            },
+            "LeftMargin": -170.2287,
+            "RightMargin": -167.7713,
+            "TopMargin": 327.4068,
+            "BottomMargin": -429.4068,
+            "Tag": 16,
+            "ActionTag": -540802506,
+            "Size": {
+              "X": 978.0,
+              "Y": 1238.0
+            },
+            "Name": "Sprite_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "IconItems/boon-23.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 247.9239,
+              "Y": 252.0992
+            },
+            "Scale": {
+              "ScaleX": 0.193,
+              "ScaleY": 0.1857
+            },
+            "RotationSkewX": -28.8438,
+            "RotationSkewY": -28.8346,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3874,
+              "Y": 0.2219
+            },
+            "PreSize": {
+              "X": 0.2594,
+              "Y": 0.3935
+            },
+            "LeftMargin": 164.9239,
+            "RightMargin": 309.0761,
+            "TopMargin": 660.4008,
+            "BottomMargin": 28.5992,
+            "Tag": 12,
+            "ActionTag": 1266392663,
+            "Size": {
+              "X": 166.0,
+              "Y": 447.0
+            },
+            "Name": "Sprite_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy-16.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 59.6025,
+              "Y": 1509.5212
+            },
+            "Scale": {
+              "ScaleX": 0.1533,
+              "ScaleY": 0.1533
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0931,
+              "Y": 1.3288
+            },
+            "PreSize": {
+              "X": 0.6812,
+              "Y": 0.5537
+            },
+            "LeftMargin": -158.3975,
+            "RightMargin": 362.3975,
+            "TopMargin": -688.0212,
+            "BottomMargin": 1195.0212,
+            "Tag": 33,
+            "ActionTag": 882146266,
+            "Size": {
+              "X": 436.0,
+              "Y": 629.0
+            },
+            "Name": "Sprite_5",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy-15.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 250.9452,
+              "Y": 1285.9539
+            },
+            "Scale": {
+              "ScaleX": 0.191,
+              "ScaleY": 0.191
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3921,
+              "Y": 1.132
+            },
+            "PreSize": {
+              "X": 0.5172,
+              "Y": 0.5026
+            },
+            "LeftMargin": 85.4452,
+            "RightMargin": 223.5548,
+            "TopMargin": -435.4539,
+            "BottomMargin": 1000.4539,
+            "Tag": 34,
+            "ActionTag": -911142427,
+            "Size": {
+              "X": 331.0,
+              "Y": 571.0
+            },
+            "Name": "Sprite_5_0",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy-17.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 549.3847,
+              "Y": 1239.229
+            },
+            "Scale": {
+              "ScaleX": 0.2451,
+              "ScaleY": 0.2451
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8584,
+              "Y": 1.0909
+            },
+            "PreSize": {
+              "X": 0.475,
+              "Y": 0.3926
+            },
+            "LeftMargin": 397.3847,
+            "RightMargin": -61.3847,
+            "TopMargin": -326.229,
+            "BottomMargin": 1016.229,
+            "Tag": 35,
+            "ActionTag": 147269308,
+            "Size": {
+              "X": 304.0,
+              "Y": 446.0
+            },
+            "Name": "Sprite_5_0_0",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy-19.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 108.8137,
+              "Y": 1393.8256
+            },
+            "Scale": {
+              "ScaleX": 0.191,
+              "ScaleY": 0.191
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.17,
+              "Y": 1.227
+            },
+            "PreSize": {
+              "X": 0.3281,
+              "Y": 0.3838
+            },
+            "LeftMargin": 3.8137,
+            "RightMargin": 426.1863,
+            "TopMargin": -475.8256,
+            "BottomMargin": 1175.8256,
+            "Tag": 36,
+            "ActionTag": -1731690799,
+            "Size": {
+              "X": 210.0,
+              "Y": 436.0
+            },
+            "Name": "Sprite_5_0_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy-21.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 563.9016,
+              "Y": 1526.7074
+            },
+            "Scale": {
+              "ScaleX": 0.191,
+              "ScaleY": 0.191
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8811,
+              "Y": 1.3439
+            },
+            "PreSize": {
+              "X": 0.6062,
+              "Y": 0.5845
+            },
+            "LeftMargin": 369.9016,
+            "RightMargin": -117.9016,
+            "TopMargin": -722.7074,
+            "BottomMargin": 1194.7074,
+            "Tag": 37,
+            "ActionTag": -1340237495,
+            "Size": {
+              "X": 388.0,
+              "Y": 664.0
+            },
+            "Name": "Sprite_5_0_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy-22.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 422.4687,
+              "Y": 1687.2306
+            },
+            "Scale": {
+              "ScaleX": 0.191,
+              "ScaleY": 0.191
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6601,
+              "Y": 1.4852
+            },
+            "PreSize": {
+              "X": 0.8156,
+              "Y": 0.4604
+            },
+            "LeftMargin": 161.4687,
+            "RightMargin": -43.4686,
+            "TopMargin": -812.7306,
+            "BottomMargin": 1425.7306,
+            "Tag": 38,
+            "ActionTag": -609913977,
+            "Size": {
+              "X": 522.0,
+              "Y": 523.0
+            },
+            "Name": "Sprite_5_0_3",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy-14.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 68.5852,
+              "Y": 1238.9695
+            },
+            "Scale": {
+              "ScaleX": 0.2418,
+              "ScaleY": 0.2418
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1072,
+              "Y": 1.0906
+            },
+            "PreSize": {
+              "X": 1.0109,
+              "Y": 0.2764
+            },
+            "LeftMargin": -254.9148,
+            "RightMargin": 247.9148,
+            "TopMargin": -259.9695,
+            "BottomMargin": 1081.9695,
+            "Tag": 39,
+            "ActionTag": -418618347,
+            "Size": {
+              "X": 647.0,
+              "Y": 314.0
+            },
+            "Name": "Sprite_5_0_4",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy-18.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 304.8745,
+              "Y": 1519.4634
+            },
+            "Scale": {
+              "ScaleX": 0.191,
+              "ScaleY": 0.191
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4764,
+              "Y": 1.3376
+            },
+            "PreSize": {
+              "X": 0.6078,
+              "Y": 0.3794
+            },
+            "LeftMargin": 110.3745,
+            "RightMargin": 140.6255,
+            "TopMargin": -598.9634,
+            "BottomMargin": 1303.9634,
+            "Tag": 40,
+            "ActionTag": 1341948888,
+            "Size": {
+              "X": 389.0,
+              "Y": 431.0
+            },
+            "Name": "Sprite_5_0_5",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy-20.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 164.6976,
+              "Y": 1661.4833
+            },
+            "Scale": {
+              "ScaleX": 0.191,
+              "ScaleY": 0.191
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2573,
+              "Y": 1.4626
+            },
+            "PreSize": {
+              "X": 0.7094,
+              "Y": 0.3081
+            },
+            "LeftMargin": -62.3024,
+            "RightMargin": 248.3024,
+            "TopMargin": -700.4833,
+            "BottomMargin": 1486.4833,
+            "Tag": 41,
+            "ActionTag": 1025440053,
+            "Size": {
+              "X": 454.0,
+              "Y": 350.0
+            },
+            "Name": "Sprite_5_0_6",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "IconItems/candy02-07.png",
+              "Plist": "Candy.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 440.5858,
+              "Y": 1382.8361
+            },
+            "Scale": {
+              "ScaleX": 0.191,
+              "ScaleY": 0.191
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6884,
+              "Y": 1.2173
+            },
+            "PreSize": {
+              "X": 0.8391,
+              "Y": 0.4938
+            },
+            "LeftMargin": 172.0858,
+            "RightMargin": -69.0858,
+            "TopMargin": -527.3361,
+            "BottomMargin": 1102.3361,
+            "Tag": 42,
+            "ActionTag": 1656634247,
+            "Size": {
+              "X": 537.0,
+              "Y": 561.0
+            },
+            "Name": "Sprite_5_0_7",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Button/btn1-01.png",
+        "Button/btn2-01.png",
+        "Candy.plist",
+        "Candy.png",
+        "Default/Button_Disable.png",
+        "IconItems/boon-23.png",
+        "IconItems/packpump-11.png",
+        "ScensImg/GameScene.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

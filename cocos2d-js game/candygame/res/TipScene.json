@@ -1,0 +1,155 @@
+{
+  "ID": "f8250e65-76e7-4e47-b7b6-bff79b88b043",
+  "Version": "2.3.3.0",
+  "Name": "TipScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 350,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ScensImg/TipScene.png",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 1136,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.8334,
+              "Y": 567.3746
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5013,
+              "Y": 0.4994
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": 0.8334,
+            "RightMargin": -0.8334,
+            "TopMargin": 0.6254,
+            "BottomMargin": -0.6254,
+            "Tag": 351,
+            "ActionTag": 669349884,
+            "Size": {
+              "X": 640.0,
+              "Y": 1136.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "Button/back2-12-12.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "Button/back-11.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 349,
+            "Scale9Height": 295,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 322.0563,
+              "Y": 299.322
+            },
+            "Scale": {
+              "ScaleX": 0.2683,
+              "ScaleY": 0.2683
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5032,
+              "Y": 0.2635
+            },
+            "PreSize": {
+              "X": 0.5922,
+              "Y": 0.279
+            },
+            "LeftMargin": 132.5563,
+            "RightMargin": 128.4437,
+            "TopMargin": 678.178,
+            "BottomMargin": 140.822,
+            "Tag": 354,
+            "ActionTag": 1429216066,
+            "Size": {
+              "X": 379.0,
+              "Y": 317.0
+            },
+            "Name": "Button_1",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Button/back-11.png",
+        "Button/back2-12-12.png",
+        "Default/Button_Disable.png",
+        "ScensImg/TipScene.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

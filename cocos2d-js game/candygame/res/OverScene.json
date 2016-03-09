@@ -1,0 +1,157 @@
+{
+  "ID": "d2f1dda9-8526-4aee-9be0-c956b5ee8465",
+  "Version": "2.3.3.0",
+  "Name": "OverScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 343,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ScensImg/OverScene.png",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 1136,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 319.1807,
+              "Y": 569.924
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4987,
+              "Y": 0.5017
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": -0.8193,
+            "RightMargin": 0.8193,
+            "TopMargin": -1.9241,
+            "BottomMargin": 1.924,
+            "Tag": 344,
+            "ActionTag": 234952202,
+            "Size": {
+              "X": 640.0,
+              "Y": 1136.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "Button/back2-12-12.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "Button/back-11.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 349,
+            "Scale9Height": 295,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 319.7846,
+              "Y": 386.4644
+            },
+            "Scale": {
+              "ScaleX": 0.2575,
+              "ScaleY": 0.2629
+            },
+            "RotationSkewX": 180.0,
+            "RotationSkewY": 179.9253,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4997,
+              "Y": 0.3402
+            },
+            "PreSize": {
+              "X": 0.5922,
+              "Y": 0.279
+            },
+            "LeftMargin": 130.2846,
+            "RightMargin": 130.7154,
+            "TopMargin": 591.0355,
+            "BottomMargin": 227.9644,
+            "Tag": 346,
+            "ActionTag": 825823834,
+            "Size": {
+              "X": 379.0,
+              "Y": 317.0
+            },
+            "Name": "Button_1",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Button/back-11.png",
+        "Button/back2-12-12.png",
+        "Default/Button_Disable.png",
+        "ScensImg/OverScene.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

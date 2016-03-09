@@ -1,0 +1,151 @@
+{
+  "ID": "5921799f-8a25-419b-b112-bc06cc35b2fe",
+  "Version": "2.3.3.0",
+  "Name": "loadinglayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [
+          {
+            "ActionTag": -313812948,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 0.339,
+                "Y": 0.1861,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -313812948,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 322,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "IconItems/bgload.png",
+              "Plist": ""
+            },
+            "Scale9Width": 2264,
+            "Scale9Height": 142,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 310.3528,
+              "Y": 573.4917
+            },
+            "Scale": {
+              "ScaleX": 0.196,
+              "ScaleY": 0.1913
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4849,
+              "Y": 0.5048
+            },
+            "PreSize": {
+              "X": 3.5375,
+              "Y": 0.125
+            },
+            "LeftMargin": -821.6472,
+            "RightMargin": -802.3528,
+            "TopMargin": 491.5083,
+            "BottomMargin": 502.4917,
+            "Tag": 328,
+            "ActionTag": -2108804834,
+            "Size": {
+              "X": 2264.0,
+              "Y": 142.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "ProgressInfo": 0,
+            "ImageFileData": {
+              "Type": "Normal",
+              "Path": "IconItems/load-11.png",
+              "Plist": ""
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 310.2128,
+              "Y": 572.8463
+            },
+            "Scale": {
+              "ScaleX": 0.339,
+              "ScaleY": 0.1861
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4847,
+              "Y": 0.5043
+            },
+            "PreSize": {
+              "X": 1.9969,
+              "Y": 0.0792
+            },
+            "LeftMargin": -328.7872,
+            "RightMargin": -309.2128,
+            "TopMargin": 518.1537,
+            "BottomMargin": 527.8463,
+            "Tag": 327,
+            "ActionTag": -313812948,
+            "Size": {
+              "X": 1278.0,
+              "Y": 90.0
+            },
+            "Name": "LoadingBar_1",
+            "ctype": "LoadingBarObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "IconItems/bgload.png",
+        "IconItems/load-11.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
